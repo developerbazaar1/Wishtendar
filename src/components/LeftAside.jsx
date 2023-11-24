@@ -1,5 +1,7 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom"; // Import Link from React Router
+import { Link } from "react-router-dom"; 
+import Badge from 'react-bootstrap/Badge';
+
 
 const LeftAside = () => {
 	const [isOpen, setIsOpen] = useState(false);
@@ -201,7 +203,7 @@ const LeftAside = () => {
 										fill="#616161"
 									/>
 								</svg>
-								<span>Cart</span>
+								<span>Cart &nbsp;<Badge bg="dark"></Badge> </span>
 							</div>
 						</Link>
 						{/* link 06 account fighter*/}

@@ -48,7 +48,7 @@ const RightAside = () => {
 								</div>
 							</li>
                             <div className="see-more-btn">
-                                <Link to="#" className="see link-text">See-more</Link>
+                                <Link to="/likeprofile" className="see link-text">See-more</Link>
                             </div>
 						</ul>
                         </div>
@@ -99,7 +99,7 @@ const RightAside = () => {
 							</li>
                             
                             <div className="see-more-btn">
-                                <Link to="#" className="see link-text">See-more</Link>
+                                <Link to="/rankingfighter" className="see link-text">See-more</Link>
                             </div>
 						</ul>
                         </div>

@@ -12,6 +12,18 @@ import ActivitiesFighter from './Pages/ActivitiesFighter';
 import RankingFighter from './Pages/RankingFighter';
 import CartFighter from './Pages/CartFighter';
 import AccountFighter from './Pages/AccountFighter';
+import PaymentInfo from './Pages/PaymentInfo';
+import TwitterPost from './Pages/TwitterPost';
+import PasswordReset from './Pages/PasswordReset';
+import LikeProfile from './Pages/LikeProfile';
+import PayMethod from './Pages/PayMethod';
+import About from './Pages/About';
+import HelpCenter from './Pages/HelpCenter';
+import TermsService from './Pages/TermsService';
+import PrivacyPolicy from './Pages/PrivacyPolicy';
+import CookiePolicy from './Pages/CookiePolicy';
+import Works from './Pages/Works';
+import Faq from './Pages/Faq';
 
 function App() {
   return (
@@ -26,6 +38,18 @@ function App() {
       <Route path='/rankingfighter' element={<RankingFighter/>}/>
       <Route path='/cartfighter' element={<CartFighter/>}/>
       <Route path='/accountfighter' element={<AccountFighter/>}/>
+      <Route path='/paymentinfo' element={<PaymentInfo/>}/>
+      <Route path='/twitterpost' element={<TwitterPost/>}/>
+      <Route path='/passwodreset' element={<PasswordReset/>}/>
+      <Route path='/likeprofile' element={<LikeProfile/>}/>
+      <Route path='/paymentmethod' element={<PayMethod/>}/>
+      <Route path='/about' element={<About/>}/>
+      <Route path='/helpcenter' element={<HelpCenter/>}/>
+      <Route path='/terms-of-services' element={<TermsService/>}/>
+      <Route path='/privacypolicy' element={<PrivacyPolicy/>}/>
+      <Route path='/cookie-policy' element={<CookiePolicy/>}/>
+      <Route path='/how-it-works' element={<Works/>}/>
+      <Route path='/faq' element={<Faq/>}/>
       </Route>
       </Routes>
     </BrowserRouter>
