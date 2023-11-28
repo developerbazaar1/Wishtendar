@@ -4,7 +4,7 @@ const About = () => {
   return (
     <>
     <main className="main-content">
-        <div>About page push </div>
+        <div>About page push request </div>
     </main>
     </>
   )
