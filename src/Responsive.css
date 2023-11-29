@@ -1,0 +1,54 @@
+/* for mobile responsive */
+@media (max-width: 768px) {
+    .image-container {
+        flex: 3 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #f0f0f0;
+        position: relative;
+        display: none;
+    }
+    .tab-btn {
+        justify-content: space-evenly;
+    }
+    .right-aside {
+      display: none;
+  }
+}
+/* mobile responsive end here */
+/* for 90 percents screen view */
+@media (min-width: 1300px) {
+  .tab-btn {
+    justify-content: space-evenly;
+    padding: 0 28px 0px 28px;
+  }
+}
+/* for 80 %  screen view*/
+@media (min-width: 1600px) {
+  .celebrity-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: auto 24px 0px 14px;
+}
+}
+/* for 75 %  screen view*/
+@media (min-width: 1700px) {
+  .tab-btn {
+    justify-content: space-evenly;
+    padding: 0 28px 0px 28px;
+  }
+  .w-124{
+    width: 124px !important;
+  }
+  .mx-1-75 {
+    margin-right: 0.25rem!important;
+    margin-left: 0.25rem!important;
+  }
+  
+  
+}
+/* for 65 %  screen view*/
+@media (min-width: 1750px) {
+}
