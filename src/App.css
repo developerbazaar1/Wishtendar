@@ -2635,6 +2635,7 @@ ul.celeb-list {
 .profilelink-copy-btn {
   padding: 10px;
   margin-bottom: 1.4rem;
+  cursor: pointer;
 }
 
 .img-2 {
@@ -2762,8 +2763,106 @@ ul.celeb-list {
 .profile-details {
   color: var(--text-general-text-light, #212121);
   font-family: Poppins;
-  font-size: 16px;
+  font-size: 1rem;
   font-style: normal;
   font-weight: 400;
   line-height: 28px;
+}
+
+.tile-content {
+  position: relative;
+}
+
+.user-handle {
+  color: #000;
+  font-family: Urbanist;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.375rem; /* 137.5% */
+  opacity: 0.6;
+}
+
+.filter-goal {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.filterLeft {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.sub-btn-fonts {
+  font-family: Urbanist;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.375px;
+}
+
+.category-btn {
+  border-radius: 20px;
+  border: 1px solid rgba(217, 217, 217, 0.85);
+  background: #d9d9d9;
+  padding: 0.625rem 0.938rem;
+  width: 10rem;
+  height: 2.563rem;
+}
+
+.rightgoal {
+  border-radius: 20px;
+  border: 1px solid #212121;
+  background-color: #000;
+  color: #fff;
+  padding: 0.625rem 0.938rem;
+  width: 10rem;
+  height: 2.563rem;
+  width: 10rem;
+  height: 2.563rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rightgoal > a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.filter-btn {
+  cursor: pointer;
+}
+
+.category-dropdown {
+  border-style: unset;
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.25);
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
+  color: #000 !important;
+  background-color: unset !important;
+  /* Fonts/h6 */
+  font-family: Urbanist;
+
+  font-style: normal;
+  font-weight: 600;
+}
+
+.dropdown-item:focus,
+.dropdown-item:hover {
+  color: black !important;
+  background-color: unset !important;
+  font-size: 16px;
+}
+
+.dropdown-item {
+  color: #616161 !important;
+  font-family: Urbanist !important;
+  font-size: 14px !important;
+  font-style: normal !important;
+  font-weight: 600 !important;
+  line-height: 20px !important;
 }
