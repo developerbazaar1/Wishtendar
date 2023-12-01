@@ -2242,8 +2242,6 @@ th {
 }
 small.est {
   color: #666;
-  leading-trim: both;
-  text-edge: cap;
   font-family: Urbanist;
   font-size: 16px;
   font-style: normal;
@@ -2582,10 +2580,6 @@ ul.celeb-list {
   border-radius: 20px 20px 3px 3px;
   /*padding: 20px;
   */
-  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
-    0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12),
-    0 3px 1px -2px rgba(0, 0, 0, 0.2);
   margin-bottom: 30px;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -2865,4 +2859,112 @@ ul.celeb-list {
   font-style: normal !important;
   font-weight: 600 !important;
   line-height: 20px !important;
+}
+
+.goal-car-img {
+  width: 14.375rem;
+  height: 14.375rem;
+}
+
+.card-img-top {
+  width: 99.5% !important;
+  height: 100%;
+  object-fit: fill;
+  border-top-right-radius: 20px !important;
+  border-top-left-radius: 20px !important;
+  border: 1px solid rgba(217, 217, 217, 0.85);
+}
+
+.progress,
+.prog {
+  height: 0.625rem !important;
+}
+
+.goal-links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-body {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 5px !important;
+}
+
+.goal-links {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.4rem;
+}
+
+.goal-price-typo {
+  color: #000;
+  font-family: Urbanist;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.5rem; /* 133.333% */
+}
+.text-dec-non {
+  text-decoration: none !important;
+  color: #000;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+}
+.goal-title {
+  color: var(--text-general-text-light, #212121);
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 175% */
+}
+
+.goal-card {
+  border-radius: 20px !important;
+  border: 1px solid rgba(217, 217, 217, 0.85) !important;
+  background: #fff;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+.card-drag-icon {
+  position: absolute;
+  left: 0.5rem;
+  top: 0.5rem;
+  cursor: pointer;
+}
+
+.goal-card-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.3rem;
+  margin: 0 0rem 0 0.4rem;
+}
+
+.footer-fonts {
+  color: #000;
+
+  /* Fonts/body 2 */
+  font-family: Poppins;
+  font-size: 0.875em;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px; /* 157.143% */
+}
+
+.footer-ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0 0.5rem 0 0.5rem;
+}
+
+.footer-container {
+  width: 57.5vw;
+  margin-left: 21vw;
+  margin-right: 21vw;
 }

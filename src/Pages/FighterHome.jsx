@@ -2,11 +2,14 @@ import React from "react";
 import { IoCopyOutline } from "react-icons/io5";
 import { FaRegCalendarAlt } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";
-
+import ProductGoal from "../img/product-gloves.png";
 import { FaInstagram, FaXTwitter } from "react-icons/fa6";
+import { AiOutlineLink } from "react-icons/ai";
+
 import { GoPencil } from "react-icons/go";
 import profilePic from "../img/userProfile.png";
 import { Link } from "react-router-dom";
+import LocaProgressBar from "../components/ProgressBar";
 const MainContent = () => {
   return (
     <>
@@ -69,7 +72,6 @@ const MainContent = () => {
                   </div>
                 </div>
               </div>
-
               <div className="filter-goal">
                 <div className="filterLeft ">
                   <button className="category-btn sub-btn-fonts">
@@ -142,6 +144,245 @@ const MainContent = () => {
                   <Link>Create Goal</Link>
                 </div>
               </div>
+              {/* card section  */}
+              <section className="goal-card-section">
+                <div
+                  className="card goal-card"
+                  style={{
+                    width: " 14.375rem",
+                    height: "23.688rem",
+                  }}
+                >
+                  <div className="goal-car-img">
+                    {/* card-drag-con start */}
+                    <div className="card-drag-icon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="25"
+                        height="25"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                      >
+                        <circle
+                          cx="10"
+                          cy="10"
+                          r="10"
+                          fill="#D9D9D9"
+                          fill-opacity="0.25"
+                        />
+                        <line
+                          x1="4"
+                          y1="6"
+                          x2="16"
+                          y2="6"
+                          stroke="black"
+                          stroke-width="1.5"
+                        />
+                        <line
+                          x1="4"
+                          y1="10"
+                          x2="16"
+                          y2="10"
+                          stroke="black"
+                          stroke-width="1.5"
+                        />
+                        <line
+                          x1="4"
+                          y1="14"
+                          x2="16"
+                          y2="14"
+                          stroke="black"
+                          stroke-width="1.5"
+                        />
+                      </svg>
+                    </div>
+                    {/* card-drag-con end */}
+                    <img src={ProductGoal} class="card-img-top" alt="loading" />
+                  </div>
+
+                  <div className="card-body">
+                    <h5 className="goal-title">Gloves</h5>
+                    <h5 className="goal-price-typo">CA$200.00</h5>
+                    <div>
+                      <div className="goal-progressbar">
+                        <LocaProgressBar />
+                      </div>
+
+                      <div className="goal-links">
+                        <Link className="text-dark">
+                          <AiOutlineLink size={20} />
+                        </Link>
+                        <Link className="d-flex gap-2 text-dark text-dec-non">
+                          <FaXTwitter size={22} />
+                          Post
+                        </Link>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* card 1 end */}
+                {/* card 2 start */}
+
+                <div
+                  className="card goal-card"
+                  style={{
+                    width: " 14.375rem",
+                    height: "23.688rem",
+                  }}
+                >
+                  <div className="goal-car-img">
+                    {/* card-drag-con start */}
+                    <div className="card-drag-icon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="25"
+                        height="25"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                      >
+                        <circle
+                          cx="10"
+                          cy="10"
+                          r="10"
+                          fill="#D9D9D9"
+                          fill-opacity="0.25"
+                        />
+                        <line
+                          x1="4"
+                          y1="6"
+                          x2="16"
+                          y2="6"
+                          stroke="black"
+                          stroke-width="1.5"
+                        />
+                        <line
+                          x1="4"
+                          y1="10"
+                          x2="16"
+                          y2="10"
+                          stroke="black"
+                          stroke-width="1.5"
+                        />
+                        <line
+                          x1="4"
+                          y1="14"
+                          x2="16"
+                          y2="14"
+                          stroke="black"
+                          stroke-width="1.5"
+                        />
+                      </svg>
+                    </div>
+                    {/* card-drag-con end */}
+                    <img src={ProductGoal} class="card-img-top" alt="loading" />
+                  </div>
+
+                  <div className="card-body">
+                    <h5 className="goal-title">Everyday Coffee</h5>
+                    <div className="">
+                      <h5 className="goal-price-typo">CA$200.00</h5>
+                      <button>Daily</button>
+                    </div>
+                    <div>
+                      <div className="goal-progressbar">
+                        <LocaProgressBar />
+                      </div>
+
+                      <div className="goal-links">
+                        <Link className="text-dark">
+                          <AiOutlineLink size={20} />
+                        </Link>
+                        <Link className="d-flex gap-2 text-dark text-dec-non">
+                          <FaXTwitter size={22} />
+                          Post
+                        </Link>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                {/* card 2 end */}
+
+                {/* card 3 start */}
+
+                <div
+                  className="card goal-card"
+                  style={{
+                    width: " 14.375rem",
+                    height: "23.688rem",
+                  }}
+                >
+                  <div className="goal-car-img">
+                    {/* card-drag-con start */}
+                    <div className="card-drag-icon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="25"
+                        height="25"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                      >
+                        <circle
+                          cx="10"
+                          cy="10"
+                          r="10"
+                          fill="#D9D9D9"
+                          fill-opacity="0.25"
+                        />
+                        <line
+                          x1="4"
+                          y1="6"
+                          x2="16"
+                          y2="6"
+                          stroke="black"
+                          stroke-width="1.5"
+                        />
+                        <line
+                          x1="4"
+                          y1="10"
+                          x2="16"
+                          y2="10"
+                          stroke="black"
+                          stroke-width="1.5"
+                        />
+                        <line
+                          x1="4"
+                          y1="14"
+                          x2="16"
+                          y2="14"
+                          stroke="black"
+                          stroke-width="1.5"
+                        />
+                      </svg>
+                    </div>
+                    {/* card-drag-con end */}
+                    <img src={ProductGoal} class="card-img-top" alt="loading" />
+                  </div>
+
+                  <div className="card-body">
+                    <h5 className="goal-title">Gloves</h5>
+                    <h5 className="goal-price-typo">CA$200.00</h5>
+                    <div>
+                      <div className="goal-progressbar">
+                        <LocaProgressBar />
+                      </div>
+
+                      <div className="goal-links">
+                        <Link className="text-dark">
+                          <AiOutlineLink size={20} />
+                        </Link>
+                        <Link className="d-flex gap-2 text-dark text-dec-non">
+                          <FaXTwitter size={22} />
+                          Post
+                        </Link>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* card 3 end */}
+              </section>
+              {/* card-section-end */}
             </div>
           </div>
         </div>
