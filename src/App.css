@@ -2683,6 +2683,62 @@ ul.celeb-list {
   width: 330px;
   border-radius: 50px;
 }
+.accordion-button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 11px 14px 11px 14px !important;
+  color: var(--bs-accordion-btn-color);
+  text-align: left;
+  background-color: #EEEEEE !important;
+  border: 0;
+  border-radius: 0;
+  overflow-anchor: none;
+  transition: var(--bs-accordion-transition);
+}
+.accordion-button:focus {
+  z-index: 3;
+  border-color: var(--bs-accordion-btn-focus-border-color);
+  outline: 0;
+  box-shadow: none !important;
+}
+.accordion-button:not(.collapsed) {
+  color: var(--bs-accordion-active-color);
+  background-color: #EEEEEE !important;
+  box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color);
+}
+.accordion {
+  --bs-accordion-border-radius: 10px !important;
+  --bs-accordion-inner-border-radius: 10px !important;
+}
+/* accordian body */
+.f-subs-thumbnail {
+  aspect-ratio: 1;
+  object-fit: cover;
+  object-position: center;
+  width: 120px;
+  overflow: hidden;
+  border-radius: 9%;
+  max-width: 100%;
+}
+.fighter-card-body {
+  gap: 20px;
+}
+.gift-status{
+  flex: auto;
+}
+span.cost-n {
+  color: #000;
+  text-align: center;
+  font-family: Urbanist;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 30px;
+  margin-right: 8px;
+}
+/* acordian body */
 
 /* 28-11-2023 */
 /* css code added by Rahul  */
