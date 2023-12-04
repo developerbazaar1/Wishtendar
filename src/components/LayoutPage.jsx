@@ -4,7 +4,9 @@ import RightAside from "./RightAside";
 import { Outlet } from "react-router-dom";
 import Footer from "./Footer";
 
-const LayoutPage = () => {
+const 
+
+ LayoutPage = () => {
   return (
     <>
       <LeftAside />
