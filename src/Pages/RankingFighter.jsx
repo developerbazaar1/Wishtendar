@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { Tab } from "bootstrap";
+import Tabs from "react-bootstrap/Tabs";
 
 const RankingFighter = () => {
   return (
@@ -42,62 +44,193 @@ const RankingFighter = () => {
       <section className="ranking-content mt-3">
         <div className="row justify-content-center">
           <div className="col-md-11 col-sm-12 col-xs-12 col-lg-11">
-            <div className="ranking-content-area">
-              {/* ranking content start from here */}
-              {/* ranking card 01 */}
-              <Link to="#" className="select-fighter">
-                <div className="fighter-card mb-3">
-                  <img
-                    // loading="lazy"
-                    src="https://content.latest-hairstyles.com/wp-content/uploads/haircuts-for-black-men.jpg"
-                    className="fighter-image"
-                    alt="profile"
-                  />
-                  <div className="fighter-details">
-                    <div className="fighter-name">Ronald Richards</div>
-                    <div className="fighter-info">
-                      [Fighter’s Username] - [Fighter Promotion Company]
-                    </div>
+            <div className="tab">
+              <Tabs
+                defaultActiveKey="home"
+                id="uncontrolled-tab-example"
+                className="mb-4"
+              >
+                {/* tab 01 for monthly */}
+                <Tab eventKey="home" title="Montly">
+                  <div className="ranking-content-area">
+                    {/* ranking content start from here */}
+                    {/* ranking card 01 */}
+                    <Link to="#" className="select-fighter">
+                      <div className="fighter-card mb-3">
+                        <img
+                          // loading="lazy"
+                          src="https://d38b044pevnwc9.cloudfront.net/cutout-nuxt/enhancer/3.jpg"
+                          className="fighter-image"
+                          alt="profile"
+                        />
+                        <div className="fighter-details">
+                          <div className="fighter-name">Thressa </div>
+                          <div className="fighter-info">
+                            [Fighter's Username] - [Fighter Promotion Company]
+                          </div>
+                        </div>
+                        <span className="cs-rank">#1</span>
+                      </div>
+                    </Link>
+                    {/* raking card 02 */}
+                    <Link to="#" className="select-fighter">
+                      <div className="fighter-card mb-3">
+                        <img
+                          // loading="lazy"
+                          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR22tlXecXNVCQDwqKb67rr9T7HnrbNVbk4XQ&usqp=CAU"
+                          className="fighter-image"
+                          alt="profile"
+                        />
+                        <div className="fighter-details">
+                          <div className="fighter-name">Jacklene</div>
+                          <div className="fighter-info">
+                            [Fighter's Username] - [Fighter Promotion Company]
+                          </div>
+                        </div>
+                        <span className="cs-rank">#2</span>
+                      </div>
+                    </Link>
+                    {/* ranking card 03 */}
+                    <Link to="#" className="select-fighter">
+                      <div className="fighter-card mb-3">
+                        <img
+                          // loading="lazy"
+                          src="https://imgv3.fotor.com/images/slider-image/A-clear-close-up-photo-of-a-woman.jpg"
+                          className="fighter-image"
+                          alt="profile"
+                        />
+                        <div className="fighter-details">
+                          <div className="fighter-name">Rexa Richards</div>
+                          <div className="fighter-info">
+                            [Fighter's Username] - [Fighter Promotion Company]
+                          </div>
+                        </div>
+                        <span className="cs-rank">#3</span>
+                      </div>
+                    </Link>
                   </div>
-                  <span className="cs-rank">#1</span>
-                </div>
-              </Link>
-              {/* raking card 02 */}
-              <Link to="#" className="select-fighter">
-                <div className="fighter-card mb-3">
-                  <img
-                    // loading="lazy"
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR22tlXecXNVCQDwqKb67rr9T7HnrbNVbk4XQ&usqp=CAU"
-                    className="fighter-image"
-                    alt="profile"
-                  />
-                  <div className="fighter-details">
-                    <div className="fighter-name">Ronald Richards</div>
-                    <div className="fighter-info">
-                      [Fighter’s Username] - [Fighter Promotion Company]
-                    </div>
+                </Tab>
+                {/* tab 02 for quaterly */}
+                <Tab eventKey="profile" title="Quarterly">
+                  <div className="ranking-content-area">
+                    {/* ranking content start from here */}
+                    {/* ranking card 01 */}
+                    <Link to="#" className="select-fighter">
+                      <div className="fighter-card mb-3">
+                        <img
+                          // loading="lazy"
+                          src="https://content.latest-hairstyles.com/wp-content/uploads/haircuts-for-black-men.jpg"
+                          className="fighter-image"
+                          alt="profile"
+                        />
+                        <div className="fighter-details">
+                          <div className="fighter-name">Ronald Richards</div>
+                          <div className="fighter-info">
+                            [Fighter's Username] - [Fighter Promotion Company]
+                          </div>
+                        </div>
+                        <span className="cs-rank">#1</span>
+                      </div>
+                    </Link>
+                    {/* raking card 02 */}
+                    <Link to="#" className="select-fighter">
+                      <div className="fighter-card mb-3">
+                        <img
+                          // loading="lazy"
+                          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR22tlXecXNVCQDwqKb67rr9T7HnrbNVbk4XQ&usqp=CAU"
+                          className="fighter-image"
+                          alt="profile"
+                        />
+                        <div className="fighter-details">
+                          <div className="fighter-name">Ronald Richards</div>
+                          <div className="fighter-info">
+                            [Fighter's Username] - [Fighter Promotion Company]
+                          </div>
+                        </div>
+                        <span className="cs-rank">#2</span>
+                      </div>
+                    </Link>
+                    {/* ranking card 03 */}
+                    <Link to="#" className="select-fighter">
+                      <div className="fighter-card mb-3">
+                        <img
+                          // loading="lazy"
+                          src="https://cc-prod.scene7.com/is/image/CCProdAuthor/How-to-Vectorize-an-Image-in-Photoshop_P3b_583x389?$pjpeg$&jpegSize=100&wid=583"
+                          className="fighter-image"
+                          alt="profile"
+                        />
+                        <div className="fighter-details">
+                          <div className="fighter-name">Ronald Richards</div>
+                          <div className="fighter-info">
+                            [Fighter's Username] - [Fighter Promotion Company]
+                          </div>
+                        </div>
+                        <span className="cs-rank">#3</span>
+                      </div>
+                    </Link>
                   </div>
-                  <span className="cs-rank">#2</span>
-                </div>
-              </Link>
-              {/* ranking card 03 */}
-              <Link to="#" className="select-fighter">
-                <div className="fighter-card mb-3">
-                  <img
-                    // loading="lazy"
-                    src="https://cc-prod.scene7.com/is/image/CCProdAuthor/How-to-Vectorize-an-Image-in-Photoshop_P3b_583x389?$pjpeg$&jpegSize=100&wid=583"
-                    className="fighter-image"
-                    alt="profile"
-                  />
-                  <div className="fighter-details">
-                    <div className="fighter-name">Ronald Richards</div>
-                    <div className="fighter-info">
-                      [Fighter’s Username] - [Fighter Promotion Company]
-                    </div>
+                </Tab>
+                {/* tab 03 for yearly */}
+                <Tab eventKey="profile-y" title="Yearly">
+                  <div className="ranking-content-area">
+                    {/* ranking content start from here */}
+                    {/* ranking card 01 */}
+                    <Link to="#" className="select-fighter">
+                      <div className="fighter-card mb-3">
+                        <img
+                          // loading="lazy"
+                          src="https://content.latest-hairstyles.com/wp-content/uploads/haircuts-for-black-men.jpg"
+                          className="fighter-image"
+                          alt="profile"
+                        />
+                        <div className="fighter-details">
+                          <div className="fighter-name">Ronald Richards</div>
+                          <div className="fighter-info">
+                            [Fighter's Username] - [Fighter Promotion Company]
+                          </div>
+                        </div>
+                        <span className="cs-rank">#1</span>
+                      </div>
+                    </Link>
+                    {/* raking card 02 */}
+                    <Link to="#" className="select-fighter">
+                      <div className="fighter-card mb-3">
+                        <img
+                          // loading="lazy"
+                          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR22tlXecXNVCQDwqKb67rr9T7HnrbNVbk4XQ&usqp=CAU"
+                          className="fighter-image"
+                          alt="profile"
+                        />
+                        <div className="fighter-details">
+                          <div className="fighter-name">Ronald Richards</div>
+                          <div className="fighter-info">
+                            [Fighter's Username] - [Fighter Promotion Company]
+                          </div>
+                        </div>
+                        <span className="cs-rank">#2</span>
+                      </div>
+                    </Link>
+                    {/* ranking card 03 */}
+                    <Link to="#" className="select-fighter">
+                      <div className="fighter-card mb-3">
+                        <img
+                          // loading="lazy"
+                          src="https://cc-prod.scene7.com/is/image/CCProdAuthor/How-to-Vectorize-an-Image-in-Photoshop_P3b_583x389?$pjpeg$&jpegSize=100&wid=583"
+                          className="fighter-image"
+                          alt="profile"
+                        />
+                        <div className="fighter-details">
+                          <div className="fighter-name">Ronald Richards</div>
+                          <div className="fighter-info">
+                            [Fighter's Username] - [Fighter Promotion Company]
+                          </div>
+                        </div>
+                        <span className="cs-rank">#3</span>
+                      </div>
+                    </Link>
                   </div>
-                  <span className="cs-rank">#3</span>
-                </div>
-              </Link>
+                </Tab>
+              </Tabs>
             </div>
           </div>
         </div>
