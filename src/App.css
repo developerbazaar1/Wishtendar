@@ -2738,6 +2738,35 @@ span.cost-n {
   line-height: 30px;
   margin-right: 8px;
 }
+button#uncontrolled-tab-example-tab-profile-y {
+  width: 150px;
+  padding: 7px;
+  margin-left: 18px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  border: 1px solid #000;
+  font-family: Urbanist;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22px;
+}
+.f-page-head h2{
+  font-family: Urbanist;
+font-size: 34px;
+font-style: normal;
+font-weight: 600;
+line-height: 46px;
+}
+.f-page-head p {
+  color: #616161;
+  font-family: Urbanist;
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: 30px;
+}
 /* acordian body */
 
 /* 28-11-2023 */
@@ -3021,6 +3050,10 @@ span.cost-n {
 
 .footer-container {
   width: 57.5vw;
-  margin-left: 21vw;
-  margin-right: 21vw;
+    margin-left: 21vw;
+    margin-right: 21vw;
+    position: relative;
+    bottom: 15px;
+    margin-top: 50vh;
+  
 }
