@@ -6,6 +6,7 @@ import Massage from "../img/massage.png";
 import dubmbels from "../img/dumbels.png";
 import { FaFacebookF } from "react-icons/fa";
 import { FaInstagram, FaXTwitter } from "react-icons/fa6";
+import { BiSolidPencil } from "react-icons/bi";
 import { AiOutlineLink } from "react-icons/ai";
 import { DragButton } from "../elements/dragButton";
 import { GoPencil } from "react-icons/go";
@@ -13,7 +14,7 @@ import profilePic from "../img/userProfile.png";
 import { Link } from "react-router-dom";
 import LocaProgressBar from "../components/ProgressBar";
 import SocialLinkModal1 from "../components/SocialLinkModal1";
-import SocialLinkModal2 from "../components/SocialLinkModal2";
+// import SocialLinkModal2 from "../components/SocialLinkModal2";
 const MainContent = () => {
   const [showSocilMdl1, setShowSocilMdl1] = useState(false);
 
@@ -31,10 +32,28 @@ const MainContent = () => {
                     srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/ce2fa3ea-01f4-4d9e-abfc-255dccdd8f17?apiKey=a05c6109e97c4bde98e757ca99d37c45&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/ce2fa3ea-01f4-4d9e-abfc-255dccdd8f17?apiKey=a05c6109e97c4bde98e757ca99d37c45&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/ce2fa3ea-01f4-4d9e-abfc-255dccdd8f17?apiKey=a05c6109e97c4bde98e757ca99d37c45&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/ce2fa3ea-01f4-4d9e-abfc-255dccdd8f17?apiKey=a05c6109e97c4bde98e757ca99d37c45&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/ce2fa3ea-01f4-4d9e-abfc-255dccdd8f17?apiKey=a05c6109e97c4bde98e757ca99d37c45&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/ce2fa3ea-01f4-4d9e-abfc-255dccdd8f17?apiKey=a05c6109e97c4bde98e757ca99d37c45&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/ce2fa3ea-01f4-4d9e-abfc-255dccdd8f17?apiKey=a05c6109e97c4bde98e757ca99d37c45&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/ce2fa3ea-01f4-4d9e-abfc-255dccdd8f17?apiKey=a05c6109e97c4bde98e757ca99d37c45&"
                     className="img u-banner"
                   />
+
+                  <div className="banner-img-picker-background">
+                    <div className="banner-img-picker">
+                      <input type="file" multiple={false} />
+                      <span className="picker-icon typo-grey-16">
+                        Edit
+                        <BiSolidPencil size={21} color="white" />
+                      </span>
+                    </div>
+                  </div>
                 </div>
 
                 <div className="user-profile-container">
                   <img src={profilePic} alt="profil-pic" />
+                  <div className="img-picker-container">
+                    <input type="file" />
+
+                    <span className="picker-icon">
+                      Edit
+                      <BiSolidPencil color="white" />
+                    </span>
+                  </div>
                 </div>
                 <div className="user-info">
                   <div className="user-content">
@@ -72,7 +91,11 @@ const MainContent = () => {
                         <FaInstagram className="social-icon-style" size={20} />
                         <FaFacebookF className="social-icon-style" size={20} />
 
-                        <GoPencil size={20} className="social-picker" />
+                        <GoPencil
+                          size={20}
+                          className="social-picker"
+                          onClick={() => setShowSocilMdl1(true)}
+                        />
                       </div>
                     </div>
                   </div>
@@ -98,7 +121,7 @@ const MainContent = () => {
                     </svg>
                   </div> */}
 
-                  <div class="dropdown">
+                  <div className="dropdown">
                     <div
                       type="button"
                       data-bs-toggle="dropdown"
@@ -117,29 +140,29 @@ const MainContent = () => {
                         />
                       </svg>
                     </div>
-                    <ul class="dropdown-menu category-dropdown">
+                    <ul className="dropdown-menu category-dropdown">
                       <li>
-                        <a class="dropdown-item" href="#">
+                        <a className="dropdown-item" href="#">
                           Default
                         </a>
                       </li>
                       <li>
-                        <a class="dropdown-item" href="#">
+                        <a className="dropdown-item" href="#">
                           Price: High to Low
                         </a>
                       </li>
                       <li>
-                        <a class="dropdown-item" href="#">
+                        <a className="dropdown-item" href="#">
                           Price: Low to High
                         </a>
                       </li>
                       <li>
-                        <a class="dropdown-item" href="#">
+                        <a className="dropdown-item" href="#">
                           Most Recent
                         </a>
                       </li>
                       <li>
-                        <a class="dropdown-item" href="#">
+                        <a className="dropdown-item" href="#">
                           Oldest
                         </a>
                       </li>
@@ -163,7 +186,11 @@ const MainContent = () => {
                   {/* card-drag-con start */}
                   <div className="card-drag-icon">{DragButton}</div>
                   {/* card-drag-con end */}
-                  <img src={ProductGoal} class="card-img-top" alt="loading" />
+                  <img
+                    src={ProductGoal}
+                    className="card-img-top"
+                    alt="loading"
+                  />
                 </div>
 
                 <div className="card-body">
@@ -195,7 +222,7 @@ const MainContent = () => {
                   {/* card-drag-con start */}
                   <div className="card-drag-icon">{DragButton}</div>
                   {/* card-drag-con end */}
-                  <img src={Massage} class="card-img-top" alt="loading" />
+                  <img src={Massage} className="card-img-top" alt="loading" />
                 </div>
 
                 <div className="card-body">
@@ -230,7 +257,7 @@ const MainContent = () => {
                   {/* card-drag-con start */}
                   <div className="card-drag-icon">{DragButton}</div>
                   {/* card-drag-con end */}
-                  <img src={dubmbels} class="card-img-top" alt="loading" />
+                  <img src={dubmbels} className="card-img-top" alt="loading" />
                 </div>
 
                 <div className="card-body">
@@ -260,8 +287,11 @@ const MainContent = () => {
         </div>
       </main>
 
-      {/* <SocialLinkModal1 /> */}
-      <SocialLinkModal2 />
+      <SocialLinkModal1
+        showSocilMdl1={showSocilMdl1}
+        setShowSocilMdl1={setShowSocilMdl1}
+      />
+      {/* <SocialLinkModal2 /> */}
     </>
   );
 };

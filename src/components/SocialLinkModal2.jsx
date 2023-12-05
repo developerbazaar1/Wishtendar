@@ -3,15 +3,18 @@ import React from "react";
 import { IoIosAdd } from "react-icons/io";
 import { FaFacebookF, FaTiktok } from "react-icons/fa";
 import { FaInstagram, FaXTwitter } from "react-icons/fa6";
-import { IoLinkOutline, IoUnlinkOutline } from "react-icons/io5";
+import { IoLinkOutline } from "react-icons/io5";
 
-const SocialLinkModal2 = () => {
+const SocialLinkModal2 = ({ showSocilMdl2, setShowSocilMdl2 }) => {
+  const handleCloseModal2 = () => {
+    setShowSocilMdl2(false);
+  };
   return (
     <>
       <div>
         <Modal
-          show={false}
-          // onHide={handleCloseadvetModal}
+          show={showSocilMdl2}
+          onHide={handleCloseModal2}
           id="modal-container"
           centered
         >
@@ -22,7 +25,7 @@ const SocialLinkModal2 = () => {
                 <div className="social-top">
                   <div className="left dropdown">
                     <button
-                      className=" dropdown-toggle social-toggle"
+                      className=" dropdown-toggle social-toggle typo-grey-16 "
                       type="button"
                       data-bs-toggle="dropdown"
                       aria-expanded="false"
@@ -67,18 +70,34 @@ const SocialLinkModal2 = () => {
                       className="socialink"
                       id="checkbox2"
                     />
-                    <label className="socialLablel" for="checkbox2"></label>
+                    <label className="socialLablel" htmlFor="checkbox2"></label>
                   </div>
                 </div>
 
-                <div className="social-bottom">bootom</div>
+                <div className="social-bottom">
+                  <div className="socila-link-input-container text-star typo-grey-16">
+                    <span>
+                      <IoLinkOutline size={23} />{" "}
+                    </span>
+                    <input
+                      type="text"
+                      name="socialIink"
+                      value="https://"
+                      onChange={() => null}
+                      className="text-black"
+                    />
+                  </div>
+                </div>
               </div>
             </div>
             <div className="social-btn-group">
               <button className="add-link-btn goal-title text-black">
                 <IoIosAdd /> <span className="text-black">add Link</span>
               </button>
-              <button className="save-social-btn goal-title text-white all-btn">
+              <button
+                className="save-social-btn goal-title text-white all-btn"
+                onClick={() => handleCloseModal2()}
+              >
                 Save
               </button>
             </div>
