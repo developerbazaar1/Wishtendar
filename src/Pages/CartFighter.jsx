@@ -45,12 +45,15 @@ const CartFighter = () => {
       {/* section for fighter cart  */}
       <section className="fighter-cart-item">
         <div className="row justify-content-center">
-          <div className="col-md-11 col-sm-12 col-xs-12 col-lg-11 text-center mb-4">
+          <div className="col-md-11 col-sm-12 col-xs-12 col-lg-11">
             <div className="cart-detail">
               <div className="fighter-name">
                 <h6 className="user-call">
-                  You are about to contribute to Rolland Goals.
+                  Rolland Richard <span className="Goal">goal</span>
                 </h6>
+                <p className="user-recall">
+                  You are about to contribute to Rolland Goals
+                </p>
               </div>
             </div>
           </div>
@@ -71,15 +74,6 @@ const CartFighter = () => {
                   </tr>
                 </thead>
                 <tbody className="cart-product-body">
-                  <tr>
-                    <td>
-                      <div className="cart-detail">
-                        <div className="fighter-name text-left">
-                          <h6 className="user-call">Rolland Richard</h6>
-                        </div>
-                      </div>
-                    </td>
-                  </tr>
                   {/* table row 01 */}
                   <tr>
                     <td>
@@ -178,8 +172,7 @@ const CartFighter = () => {
                       </div>
                     </td>
                     <td className="own-category t-data">
-                      {" "}
-                      Subscription{" "}
+                      Subscription
                       <span>
                         <Badge pill bg="light" text="dark">
                           Daily
