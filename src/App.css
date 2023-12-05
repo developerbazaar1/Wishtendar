@@ -2768,6 +2768,44 @@ font-style: normal;
 font-weight: 600;
 line-height: 30px;
 }
+.inf-img {
+  width: 320px;
+  height: 320px;
+  object-fit: cover; /* Adjust as per your requirement */
+}
+.help-page {
+  text-align: -webkit-center;
+}
+a.email-button {
+  padding: 10px 13px;
+  border-radius: var(--Rectangle-Radius, 100px);
+  border: 2px solid #000;
+  color: #000;
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: 28px; 
+text-decoration: none;
+}
+a.call-button {
+  padding: 10px 13px;
+  border-radius: var(--Rectangle-Radius, 100px);
+  border: 2px solid #212121;
+  background: #212121;
+  color: #FFF;
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: 28px; 
+text-decoration: none;
+}
+.btn-group {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+}
 /* acordian body */
 
 /* 28-11-2023 */
