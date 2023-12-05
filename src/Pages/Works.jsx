@@ -14,6 +14,24 @@ const Works = () => {
             </div>
           </div>
         </section>
+        {/* how its works content area  */}
+        <section className="how-it-works-cnt">
+          <div className="row justify-content-center">
+            <div className="col-md-11 col-sm-12 col-xs-12 col-lg-11">
+              <div className="row">
+                {/* col-01  */}
+                <div className="col-md-3 col-sm-12 col-lg-3 col-xs-12">
+                  {/* image */}
+                  alok
+                </div>
+                <div className="col-md-9 col-sm-12 col-lg-9 col-xs-12">
+                  {/* content */}
+                  soni
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
     </main>
   )
 }
