@@ -24,6 +24,7 @@ import CookiePolicy from "./Pages/CookiePolicy";
 import Works from "./Pages/Works";
 import Faq from "./Pages/Faq";
 import Footer from "./components/Footer";
+import AddGoal from "./Pages/AddGoal";
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
       <Routes>
         <Route path="/" element={<LandingLog />} />
         <Route element={<LayoutPage />}>
+          <Route path="addgoal" element={<AddGoal />} />
           <Route path="/fighterhome" element={<FighterHome />} />
           <Route path="/companionhome" element={<CompanionHome />} />
           <Route path="/searchfighter" element={<SearchFighter />} />

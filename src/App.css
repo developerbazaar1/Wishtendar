@@ -2782,25 +2782,25 @@ a.email-button {
   border-radius: var(--Rectangle-Radius, 100px);
   border: 2px solid #000;
   color: #000;
-font-family: Poppins;
-font-size: 16px;
-font-style: normal;
-font-weight: 600;
-line-height: 28px; 
-text-decoration: none;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px;
+  text-decoration: none;
 }
 a.call-button {
   padding: 10px 13px;
   border-radius: var(--Rectangle-Radius, 100px);
   border: 2px solid #212121;
   background: #212121;
-  color: #FFF;
-font-family: Poppins;
-font-size: 16px;
-font-style: normal;
-font-weight: 600;
-line-height: 28px; 
-text-decoration: none;
+  color: #fff;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px;
+  text-decoration: none;
 }
 .btn-group {
   display: flex;
@@ -3307,6 +3307,24 @@ text-decoration: none;
   line-height: 1.125rem; /* 175% */
 }
 
+.typo-grey-14 {
+  color: var(--text-general-text-light, #212121);
+  font-family: Poppins;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.375rem; /* 175% */
+}
+.typo-grey-12 {
+  color: var(--text-general-text-light, #212121);
+
+  font-family: Poppins;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.125rem;
+}
+
 .img-picker-container:hover {
   opacity: 0.5;
 }
@@ -3407,4 +3425,87 @@ text-decoration: none;
 
 .tab-content {
   position: relative !important;
+}
+
+.goal-img-upload {
+  cursor: pointer;
+  border-radius: 10px;
+  border: 1px dashed;
+  height: 143px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: #eeeeee;
+}
+
+.goal-select-grp {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.goal-select-grp > input {
+  width: 20px;
+  height: 20px;
+  accent-color: black;
+  cursor: pointer;
+}
+
+.goal-select-grp > label {
+  color: #212121;
+  font-family: Urbanist;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px; /* 133.333% */
+}
+
+.single-goal-content {
+  display: flex;
+  gap: 10px;
+  margin-left: 31px;
+  align-items: baseline;
+}
+
+.single-goal-content > input {
+  accent-color: black;
+}
+
+.single-goal-content > label {
+  display: flex;
+  flex-direction: column;
+}
+
+.sub-goal-content {
+  margin-left: 31px !important;
+}
+
+.sub-goal-content .sub-left,
+.sub-right > div {
+  display: flex;
+  gap: 8px;
+  align-self: baseline;
+}
+
+.sub-right .sub-right-inputpgrp > input,
+.sub-left > input {
+  accent-color: black;
+}
+
+.goal-container .crowd-fund > label {
+  margin-left: 31px;
+}
+
+.goal-type-btn {
+  border: none;
+  background-color: inherit;
+}
+
+.goal-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }

@@ -170,7 +170,7 @@ const MainContent = () => {
                   </div>
                 </div>
                 <div className="rightgoal all-btn">
-                  <Link>Create Goal</Link>
+                  <Link to="/addGoal">Create Goal</Link>
                 </div>
               </div>
             </div>
