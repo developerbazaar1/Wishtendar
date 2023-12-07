@@ -65,7 +65,6 @@ const Faq = () => {
             </Accordion>
           </div>
         </div>
-
       </section>
     </main>
   )
