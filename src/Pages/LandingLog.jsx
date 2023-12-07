@@ -192,10 +192,13 @@ const LandingLog = () => {
                         <div className="col-md-12 col-sm-12 col-xs-12 col-lg-12">
                           {/* form input one for log email */}
                           <div className="form-group text-left">
-                            <label className="form-head mb-2" for="log-mail">
+                            <label
+                              className="form-head mb-2"
+                              htmlFor="log-mail"
+                            >
                               Email :
                             </label>
-                            <div class="inputWithIcon">
+                            <div className="inputWithIcon">
                               <input
                                 type="text"
                                 id="login-email"
@@ -213,7 +216,7 @@ const LandingLog = () => {
                               >
                                 <path
                                   fill-rule="evenodd"
-                                  clip-rule="evenodd"
+                                  clipRule="evenodd"
                                   d="M13.1162 0.5C14.2337 0.5 15.3087 0.941667 16.0995 1.73417C16.8912 2.525 17.3337 3.59167 17.3337 4.70833V11.2917C17.3337 13.6167 15.442 15.5 13.1162 15.5H4.88366C2.55783 15.5 0.666992 13.6167 0.666992 11.2917V4.70833C0.666992 2.38333 2.54949 0.5 4.88366 0.5H13.1162ZM14.442 5.95L14.5087 5.88333C14.7078 5.64167 14.7078 5.29167 14.4995 5.05C14.3837 4.92583 14.2245 4.85 14.0587 4.83333C13.8837 4.82417 13.717 4.88333 13.5912 5L9.83366 8C9.35033 8.40083 8.65783 8.40083 8.16699 8L4.41699 5C4.15783 4.80833 3.79949 4.83333 3.58366 5.05833C3.35866 5.28333 3.33366 5.64167 3.52449 5.89167L3.63366 6L7.42533 8.95833C7.89199 9.325 8.45783 9.525 9.05033 9.525C9.64116 9.525 10.217 9.325 10.6828 8.95833L14.442 5.95Z"
                                   fill="#9E9E9E"
                                 />
@@ -222,10 +225,13 @@ const LandingLog = () => {
                           </div>
                           {/* form input two for log password */}
                           <div className="form-group text-left mt-2">
-                            <label className="form-head mb-2" for="log-mail">
+                            <label
+                              className="form-head mb-2"
+                              htmlFor="log-mail"
+                            >
                               password :
                             </label>
-                            <div class="inputWithIcon">
+                            <div className="inputWithIcon">
                               <input
                                 type="password"
                                 id="login-password"
@@ -242,8 +248,8 @@ const LandingLog = () => {
                                 fill="none"
                               >
                                 <path
-                                  fill-rule="evenodd"
-                                  clip-rule="evenodd"
+                                  fillRule="evenodd"
+                                  clipRule="evenodd"
                                   d="M12.6023 5.16334V6.44112C14.0376 6.88913 15.0834 8.18844 15.0834 9.74033V13.8544C15.0834 15.7756 13.4906 17.3333 11.5269 17.3333H4.47408C2.50955 17.3333 0.916748 15.7756 0.916748 13.8544V9.74033C0.916748 8.18844 1.96337 6.88913 3.39782 6.44112V5.16334C3.40629 2.67899 5.46397 0.666664 7.98738 0.666664C10.5447 0.666664 12.6023 2.67899 12.6023 5.16334ZM8.00431 2.11587C9.72328 2.11587 11.1205 3.48226 11.1205 5.16334V6.26142H4.87969V5.14677C4.88816 3.47398 6.28535 2.11587 8.00431 2.11587ZM8.74102 12.7124C8.74102 13.1182 8.41077 13.4412 7.99585 13.4412C7.58939 13.4412 7.25915 13.1182 7.25915 12.7124V10.874C7.25915 10.4765 7.58939 10.1536 7.99585 10.1536C8.41077 10.1536 8.74102 10.4765 8.74102 10.874V12.7124Z"
                                   fill="#9E9E9E"
                                 />

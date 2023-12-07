@@ -80,7 +80,9 @@ const MainContent = () => {
                   </div>
                   <div className="log-user-info-right">
                     <div className="fighter-top text-end">
-                      <Link className="follow-button fav-btn">Favorites</Link>
+                      <Link to="/favorite" className="follow-button fav-btn">
+                        Favorites
+                      </Link>
                     </div>
                     <div className="fighter-bottom d-flex gap-2 flex-column">
                       <div className="d-flex align-items-center gap-1">
