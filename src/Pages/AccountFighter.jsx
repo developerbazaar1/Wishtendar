@@ -1,7 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import SurpRiseGiftPop from "../components/SurpRiseGiftPop";
+import AccountDeleteModal from "../components/AccountDeleteModal";
+import XsetupModal from "../components/XsetupModal";
 
 const AccountFighter = () => {
+  const [showsurpriseModal, setshowsurpriseModal] = useState(false);
+  const [showPasswordModal, setshowPasswordModal] = useState(false);
+  const [showTwiterModaldModal, setshowTwiterModaldModal] = useState(false);
+
   return (
     <main className="main-content">
       {/* section start from here */}
@@ -27,7 +34,7 @@ const AccountFighter = () => {
         <div className="row ">
           <div className="col-md-12 col-sm-12 col-xs-12 col-lg-12 text-center">
             <div className="page-head">
-              <div class="card-head mb-3 mt-2">
+              <div className="card-head mb-3 mt-2">
                 <h5>Account</h5>
               </div>
             </div>
@@ -38,9 +45,9 @@ const AccountFighter = () => {
             {/* account form start from here */}
             <form className="acc-form">
               {/* for image wrapper */}
-              <div class="file-wrapper">
-                <input type="file" id="fileInput" class="hidden-input" />
-                <label for="fileInput" class="file-upload">
+              <div className="file-wrapper">
+                <input type="file" id="fileInput" className="hidden-input" />
+                <label htmlFor="fileInput" className="file-upload">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="32"
@@ -57,63 +64,66 @@ const AccountFighter = () => {
               </div>
               {/* for input 01 for username */}
               <div className="form-group text-left mb-2">
-                <label class="form-head mb-2" for="username">
+                <label className="form-head mb-2" htmlFor="username">
                   Username :
                 </label>
                 <input
                   type="text"
                   id="user-name"
-                  class="form-control"
+                  className="form-control"
                   placeholder="Enter your username"
                   required
                 />
               </div>
               {/* form input 02 for first name  */}
               <div className="form-group text-left mb-2">
-                <label class="form-head mb-2" for="userfirstame">
+                <label className="form-head mb-2" htmlFor="userfirstame">
                   First Name :
                 </label>
                 <input
                   type="text"
                   id="first-name"
-                  class="form-control"
+                  className="form-control"
                   placeholder="Enter your first name"
                   required
                 />
               </div>
               {/* input 03 for last name*/}
               <div className="form-group text-left mb-2">
-                <label class="form-head mb-2" for="userlastname">
+                <label className="form-head mb-2" htmlFor="userlastname">
                   Last Name :
                 </label>
                 <input
                   type="text"
                   id="last-name"
-                  class="form-control"
+                  className="form-control"
                   placeholder="Enter your last name"
                   required
                 />
               </div>
               {/* input 04 for email address */}
               <div className="form-group text-left mb-2">
-                <label class="form-head mb-2" for="useremail">
+                <label className="form-head mb-2" htmlFor="useremail">
                   Email :
                 </label>
                 <input
                   type="text"
                   id="user-email"
-                  class="form-control"
+                  className="form-control"
                   placeholder="Enter your email"
                   required
                 />
               </div>
               {/* input 05 for select currency */}
               <div className="form-group text-left mb-2">
-                <label class="form-head mb-2" for="s-currency">
+                <label className="form-head mb-2" htmlFor="s-currency">
                   Select Currency (all currencies) :
                 </label>
-                <div class="select-group h-40 select-currency">
-                  <select class="form-control" id="s-currency">
+                <div className="select-group h-40 select-currency">
+                  <select
+                    className="form-control"
+                    id="s-currency dropdown-toggle"
+                  >
                     <option value="">Select Currency (all currencies) </option>
                     <option value="CAD">CAD</option>
                     <option value="USD">USD</option>
@@ -125,11 +135,11 @@ const AccountFighter = () => {
               </div>
               {/* input 06 for fight prootion company */}
               <div className="form-group text-left mb-2 ">
-                <label class="form-head mb-2" for="fight-promotion">
+                <label className="form-head mb-2" htmlFor="fight-promotion">
                   Select Fight Promotion Company :
                 </label>
-                <div class="select-group h-40 select-promotion">
-                  <select class="form-control" id="s-currency">
+                <div className="select-group h-40 select-promotion">
+                  <select className="form-control" id="s-currency">
                     <option value="">Select Fight Promotion Company </option>
                     <option value="CAD">UFC</option>
                     <option value="USD">Bellator</option>
@@ -152,20 +162,62 @@ const AccountFighter = () => {
                   </select>
                 </div>
               </div>
-              <div className="act-btn mt-5">
-                {/* btn for payment */}
-                <div className="btn-payment mb-5">
-                  <Link to="/paymentinfo" className="btn-pay sub-bt link-text ">
-                    Go to Payment Dashboard
-                  </Link>
+              {/* display my name in public ranking page */}
+              <div className="form-group text-left mb-2 ">
+                <div className="select-group h-40 displaynameRanking">
+                  <label className="form-head " htmlFor="displayName">
+                    Display my name in public Rankings page
+                  </label>
+                  <div className="right">
+                    <input
+                      type="checkbox"
+                      className="socialink"
+                      id="displayName"
+                    />
+                    <label
+                      className="socialLablel"
+                      htmlFor="displayName"
+                    ></label>
+                  </div>
                 </div>
-                {/* btn for x setup*/}
-                <div className="btn-payment mb-5">
-                  <Link
-                    to="/twitterpost"
-                    className="btn-pay sub-bt-x link-text "
+              </div>
+              {/* Surprise Gift Section */}
+
+              <div className="form-group text-left mb-2 ">
+                <div
+                  type="button"
+                  className="select-group h-40 surprise-gift-container"
+                  onClick={() => setshowsurpriseModal(true)}
+                >
+                  <label className="form-head " htmlFor="defaulGift">
+                    Surprise Gift Settings
+                  </label>
+
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="26"
+                    height="26"
+                    viewBox="0 0 26 26"
+                    fill="none"
                   >
-                    Setup Auto{" "}
+                    <path
+                      fillRule="evenodd"
+                      clipRule="evenodd"
+                      d="M10.3421 7.36536C9.92633 6.94958 9.92633 6.27547 10.3421 5.85969C10.7579 5.44391 11.432 5.44391 11.8478 5.85969L18.2358 12.2477C18.6516 12.6635 18.6516 13.3376 18.2358 13.7534L11.8478 20.1414C11.432 20.5572 10.7579 20.5572 10.3421 20.1414C9.92633 19.7257 9.92633 19.0516 10.3421 18.6358L15.9773 13.0006L10.3421 7.36536Z"
+                      fill="#616161"
+                    />
+                  </svg>
+                </div>
+              </div>
+
+              {/* twitter auto post section */}
+              <div className="form-group text-left mb-2 ">
+                <div className="select-group h-40 displaynameRanking">
+                  <label
+                    className="form-head x-auto-setupBtn"
+                    onClick={() => setshowTwiterModaldModal(true)}
+                  >
+                    Setup Auto &nbsp;
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="13"
@@ -177,8 +229,21 @@ const AccountFighter = () => {
                         d="M7.73681 6.00469L12.5763 0.5H11.4294L7.22739 5.27953L3.8711 0.5H0L5.07532 7.72759L0 13.5H1.14692L5.58454 8.45265L9.1289 13.5H13L7.7365 6.00469H7.73681ZM6.16599 7.79117L5.65169 7.0715L1.56013 1.3448H3.32172L6.62352 5.9665L7.13771 6.68617L11.4299 12.6936H9.66852L6.16599 7.79148V7.79117Z"
                         fill="black"
                       />
-                    </svg>{" "}
-                    Post
+                    </svg>
+                    &nbsp; Post
+                  </label>
+                  <div className="right">
+                    <input type="checkbox" className="socialink" id="xpost" />
+                    <label className="socialLablel" htmlFor="xpost"></label>
+                  </div>
+                </div>
+              </div>
+
+              <div className="act-btn mt-5">
+                {/* btn for payment */}
+                <div className="btn-payment mb-5">
+                  <Link to="/paymentinfo" className="btn-pay sub-bt link-text ">
+                    Go to Payment Dashboard
                   </Link>
                 </div>
                 {/* btn for change password */}
@@ -197,11 +262,32 @@ const AccountFighter = () => {
                   Submit
                 </button>
               </div>
+              <div
+                className="delete-account my-4 typo-grey-16-600"
+                onClick={() => setshowPasswordModal(true)}
+              >
+                Delete Account
+              </div>
             </form>
           </div>
         </div>
       </section>
       {/* section end from here */}
+      <SurpRiseGiftPop
+        showsurpriseModal={showsurpriseModal}
+        setshowsurpriseModal={setshowsurpriseModal}
+      />
+
+      {/* account delte modal */}
+      <AccountDeleteModal
+        showPasswordModal={showPasswordModal}
+        setshowPasswordModal={setshowPasswordModal}
+      />
+
+      <XsetupModal
+        showTwiterModaldModal={showTwiterModaldModal}
+        setshowTwiterModaldModal={setshowTwiterModaldModal}
+      />
     </main>
   );
 };

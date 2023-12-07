@@ -25,6 +25,7 @@ import Works from "./Pages/Works";
 import Faq from "./Pages/Faq";
 import Footer from "./components/Footer";
 import AddGoal from "./Pages/AddGoal";
+import FavoriteFighter from "./Pages/FavoriteFighter";
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
         <Route path="/" element={<LandingLog />} />
         <Route element={<LayoutPage />}>
           <Route path="addgoal" element={<AddGoal />} />
+          <Route path="favorite" element={<FavoriteFighter />} />
           <Route path="/fighterhome" element={<FighterHome />} />
           <Route path="/companionhome" element={<CompanionHome />} />
           <Route path="/searchfighter" element={<SearchFighter />} />

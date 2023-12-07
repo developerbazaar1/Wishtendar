@@ -1,3 +1,4 @@
+/* custom drop down  start here */
 .custom-select {
   position: relative;
   font-family: Poppins;
@@ -70,3 +71,119 @@
   scale: 1.02;
   margin: 0 6px;
 }
+
+/* custom drop down  end here */
+/* stepper style  start here */
+
+.stepper-horizontal {
+  display: table;
+  width: 100%;
+  margin: 0 auto;
+  .step {
+    display: table-cell;
+    position: relative;
+    padding: 1.5rem;
+    z-index: 2;
+    width: 25%;
+    &:last-child .step-bar-left,
+    &:last-child .step-bar-right {
+      display: none;
+    }
+
+    .step-circle {
+      width: 2rem;
+      height: 2rem;
+      margin: 0 auto;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 1.75rem;
+      font-size: 1rem;
+      font-weight: 600;
+      z-index: 2;
+      border: 2px solid black;
+    }
+
+    &.done {
+      .step-circle {
+        background-color: black;
+        border: 2px solid black;
+        color: #ffffff;
+
+        &:before {
+          font-family: "FontAwesome";
+          font-weight: 100;
+          content: "\f00c";
+        }
+        .span {
+          display: none;
+        }
+      }
+      .step-title {
+        color: #102a43;
+      }
+    }
+
+    &.editing {
+      .step-circle {
+        background: black;
+        border-color: black;
+        color: #ffffff;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .step-title {
+        color: #212121;
+        /* text-decoration: underline; */
+      }
+    }
+
+    .step-title {
+      margin-top: 1rem;
+      font-size: 1rem;
+      font-weight: 600;
+    }
+    .step-title,
+    .step-optional {
+      text-align: center;
+      color: #829ab1;
+    }
+    .step-optional {
+      font-size: 0.75rem;
+      font-style: italic;
+      color: #9fb3c8;
+    }
+
+    .step-bar-left,
+    .step-bar-right {
+      position: absolute;
+      top: calc(2rem + 5px);
+      /* height: 5px; */
+      background-color: #d9e2ec;
+      border: solid #d9e2ec;
+      border-width: 1px 0;
+    }
+    .step-bar-left {
+      width: calc(100% - 4rem);
+      left: 50%;
+      margin: 0 1.9rem;
+      z-index: -1;
+    }
+    .step-bar-right {
+      width: 0;
+      left: 50%;
+      margin: 0 1.9rem;
+      z-index: -1;
+      transition: width 500ms ease-in-out;
+    }
+    &.done .step-bar-right {
+      background-color: black;
+      border-color: black;
+      z-index: 3;
+      width: calc(100% - 4rem);
+    }
+  }
+}
+
+/* stepper style  end here */
