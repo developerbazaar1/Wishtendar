@@ -15,10 +15,10 @@ const LeftAside = () => {
 
   return (
     <div className={`conta ${isOpen ? "open" : ""}`}>
-      <button className="mobile-toggle" onClick={toggleNav}>
+      {/* <button className="mobile-toggle" onClick={toggleNav}>
         <i className={`fas ${isOpen ? "fa-times" : "fa-bars"}`}></i>
-      </button>
-      <nav className="side-nav">
+      </button> */}
+      <nav className="side-nav mt-3">
         <div className="divison-left-aside">
           <div className="left-head">
             <h6 className="head-pills">Fight Companion</h6>

@@ -1,22 +1,80 @@
 import React, { useState } from "react";
 import { IoCopyOutline } from "react-icons/io5";
 import { FaRegCalendarAlt } from "react-icons/fa";
-import ProductGoal from "../img/product-gloves.png";
-import Massage from "../img/massage.png";
-import dubmbels from "../img/dumbels.png";
 import { FaFacebookF } from "react-icons/fa";
 import { FaInstagram, FaXTwitter } from "react-icons/fa6";
 import { BiSolidPencil } from "react-icons/bi";
-import { AiOutlineLink } from "react-icons/ai";
-import { DragButton } from "../elements/dragButton";
 import { GoPencil } from "react-icons/go";
 import profilePic from "../img/userProfile.png";
 import { Link } from "react-router-dom";
-import LocaProgressBar from "../components/ProgressBar";
 import SocialLinkModal1 from "../components/SocialLinkModal1";
+import Goals from "../components/Goals";
+import { DragDropContext } from "react-beautiful-dnd";
+import ProductGoal from "../img/product-gloves.png";
+import Massage from "../img/massage.png";
+import dubmbels from "../img/dumbels.png";
+import CustomSelect from "../components/CustomSelect";
 // import SocialLinkModal2 from "../components/SocialLinkModal2";
 const MainContent = () => {
   const [showSocilMdl1, setShowSocilMdl1] = useState(false);
+
+  const options = [
+    { label: "Category", value: "" },
+    { label: "Gadgets and Electronics", value: "1" },
+    { label: "Health and Fitness Goals", value: "2" },
+    { label: "Skill Development Courses", value: "3" },
+    { label: "Charitable Donations", value: "4" },
+    { label: "Home Decor and Furnishing", value: "5" },
+    { label: "Other", value: "6" },
+  ];
+
+  const [goals, setGoals] = useState([
+    {
+      name: "Gloves",
+      price: "CA$200.00",
+      goalImg: ProductGoal,
+      ProgessBar: true,
+      frequency: "Daily",
+      id: 136,
+    },
+    {
+      name: "Everyday Coffee",
+      price: "CA$200.00",
+      goalImg: Massage,
+      ProgessBar: false,
+      id: 225,
+    },
+    {
+      name: "dubmbels",
+      price: "CA$200.00",
+      goalImg: dubmbels,
+      ProgessBar: true,
+      frequency: "Monthly",
+      id: 433,
+    },
+  ]);
+  const onDragEnd = (result) => {
+    const { destination, source } = result;
+
+    if (!destination) {
+      return;
+    }
+    if (
+      destination.droppableId === source.droppableId &&
+      destination.index === source.index
+    ) {
+      return;
+    }
+
+    let active = goals;
+    let add;
+    add = active[source.index];
+    active.splice(source.index, 1);
+    active.splice(destination.index, 0, add);
+
+    setGoals(active);
+    console.log("This is Drang and Drop result", result);
+  };
 
   return (
     <>
@@ -89,9 +147,21 @@ const MainContent = () => {
                         <FaRegCalendarAlt size={23} /> Joined May 2020
                       </div>
                       <div className="d-flex gap-1 align-items-center justify-content-end">
-                        <FaXTwitter className="social-icon-style" size={20} />
-                        <FaInstagram className="social-icon-style" size={20} />
-                        <FaFacebookF className="social-icon-style" size={20} />
+                        <Link>
+                          <FaXTwitter className="social-icon-style" size={20} />
+                        </Link>
+                        <Link>
+                          <FaInstagram
+                            className="social-icon-style"
+                            size={20}
+                          />
+                        </Link>
+                        <Link>
+                          <FaFacebookF
+                            className="social-icon-style"
+                            size={20}
+                          />
+                        </Link>
 
                         <GoPencil
                           size={20}
@@ -108,6 +178,7 @@ const MainContent = () => {
                   <button className="category-btn sub-btn-fonts">
                     Category
                   </button>
+
                   {/* <div className="filter-btn sub-btn-fonts">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -181,108 +252,11 @@ const MainContent = () => {
 
         <div className="row">
           {/* card section-start */}
+
           <div className="col-md-12 col-sm-12 col-xs-12 col-lg-12">
-            <section className="goal-card-section">
-              <div className="card goal-card">
-                <div className="goal-car-img">
-                  {/* card-drag-con start */}
-                  <div className="card-drag-icon">{DragButton}</div>
-                  {/* card-drag-con end */}
-                  <img
-                    src={ProductGoal}
-                    className="card-img-top"
-                    alt="loading"
-                  />
-                </div>
-
-                <div className="card-body">
-                  <h5 className="goal-title">Gloves</h5>
-                  <h5 className="goal-price-typo">CA$200.00</h5>
-                  <div>
-                    <div className="goal-progressbar">
-                      <LocaProgressBar />
-                    </div>
-
-                    <div className="goal-links">
-                      <Link className="text-dark">
-                        <AiOutlineLink size={20} />
-                      </Link>
-                      <Link className="d-flex gap-2 text-dark text-dec-non">
-                        <FaXTwitter size={22} />
-                        Post
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              {/* card 1 end */}
-              {/* card 2 start */}
-
-              <div className="card goal-card">
-                <div className="goal-car-img">
-                  {/* card-drag-con start */}
-                  <div className="card-drag-icon">{DragButton}</div>
-                  {/* card-drag-con end */}
-                  <img src={Massage} className="card-img-top" alt="loading" />
-                </div>
-
-                <div className="card-body">
-                  <h5 className="goal-title">Everyday Coffee</h5>
-                  <div className="price-plan-subscription">
-                    <h5 className="goal-price-typo">CA$200.00</h5>
-                    <button className="freq-btn medium-typo">Daily</button>
-                  </div>
-                  <div>
-                    {/* <div className="goal-progressbar">
-                        <LocaProgressBar />
-                      </div> */}
-
-                    <div className="goal-links">
-                      <Link className="text-dark">
-                        <AiOutlineLink size={20} />
-                      </Link>
-                      <Link className="d-flex gap-2 text-dark text-dec-non">
-                        <FaXTwitter size={22} />
-                        Post
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              {/* card 2 end */}
-
-              {/* card 3 start */}
-
-              <div className="card goal-card">
-                <div className="goal-car-img">
-                  {/* card-drag-con start */}
-                  <div className="card-drag-icon">{DragButton}</div>
-                  {/* card-drag-con end */}
-                  <img src={dubmbels} className="card-img-top" alt="loading" />
-                </div>
-
-                <div className="card-body">
-                  <h5 className="goal-title">Gloves</h5>
-                  <h5 className="goal-price-typo">CA$200.00</h5>
-                  <div>
-                    <div className="goal-progressbar">
-                      <LocaProgressBar />
-                    </div>
-
-                    <div className="goal-links">
-                      <Link className="text-dark">
-                        <AiOutlineLink size={20} />
-                      </Link>
-                      <Link className="d-flex gap-2 text-dark text-dec-non">
-                        <FaXTwitter size={22} />
-                        Post
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
+            <DragDropContext onDragEnd={onDragEnd}>
+              <Goals goals={goals} />
+            </DragDropContext>
           </div>
 
           {/* card section-end-here */}

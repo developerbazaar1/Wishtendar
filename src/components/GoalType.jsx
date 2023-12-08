@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const GoalComponent = () => {
+const GoalType = () => {
   const [selectedGoal, setSelectedGoal] = useState("");
   const [goalTypeClicked, setGoalTypeClicked] = useState(false);
 
@@ -120,4 +120,4 @@ const GoalComponent = () => {
   );
 };
 
-export default GoalComponent;
+export default GoalType;

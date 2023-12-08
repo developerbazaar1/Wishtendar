@@ -10,187 +10,232 @@
     />
 
     <style>
-      body {
-        font-family: "Open Sans";
+      .goal-details-container {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        padding: 0 60px;
       }
-
-      .stepper-horizontal {
-        display: table;
+      @media (max-width: 991px) {
+        .goal-details-container {
+          padding: 0 20px;
+        }
+      }
+      .goal-details-container-sub {
+        text-align: center;
+        display: flex;
+        width: 600px;
+        max-width: 100%;
+        flex-direction: column;
+      }
+      .goal-detial-img {
+        aspect-ratio: 1;
+        object-fit: contain;
+        object-position: center;
+        width: 280px;
+        overflow: hidden;
+        align-self: center;
+        max-width: 100%;
+      }
+      .divii-3 {
+        border-radius: var(--Rectangle-Radius, 100px);
+        background-color: var(--surface-light-dark-light-7, #eee);
+        align-self: stretch;
+        display: flex;
+        margin-top: 20px;
+        padding-right: 60px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+      }
+      @media (max-width: 991px) {
+        .divii-3 {
+          max-width: 100%;
+          padding-right: 20px;
+        }
+      }
+      .divii-4 {
+        border-radius: var(--Rectangle-Radius, 100px);
+        background-color: #212121;
+        display: flex;
+        width: 200px;
+        height: 20px;
+        flex-direction: column;
+      }
+      .divii-5 {
+        justify-content: space-between;
+        align-items: start;
+        align-self: stretch;
+        display: flex;
+        margin-top: 20px;
         width: 100%;
-        margin: 0 auto;
-        .step {
-          display: table-cell;
-          position: relative;
-          padding: 1.5rem;
-          z-index: 2;
-          width: 25%;
-          &:last-child .step-bar-left,
-          &:last-child .step-bar-right {
-            display: none;
-          }
-
-          .step-circle {
-            width: 2rem;
-            height: 2rem;
-            margin: 0 auto;
-            border-radius: 50%;
-            text-align: center;
-            line-height: 1.75rem;
-            font-size: 1rem;
-            font-weight: 600;
-            z-index: 2;
-            border: 2px solid #d9e2ec;
-          }
-
-          &.done {
-            .step-circle {
-              background-color: black;
-              border: 2px solid black;
-              color: #ffffff;
-
-              &:before {
-                font-family: "FontAwesome";
-                font-weight: 100;
-                content: "\f00c";
-              }
-              .span {
-                display: none;
-              }
-            }
-            .step-title {
-              color: #102a43;
-            }
-          }
-
-          &.editing {
-            .step-circle {
-              background: #ffffff;
-              border-color: #212121;
-              color: black;
-              display: flex;
-              align-items: center;
-              justify-content: center;
-            }
-            .step-title {
-              color: #212121;
-              /* text-decoration: underline; */
-            }
-          }
-
-          .step-title {
-            margin-top: 1rem;
-            font-size: 1rem;
-            font-weight: 600;
-          }
-          .step-title,
-          .step-optional {
-            text-align: center;
-            color: #829ab1;
-          }
-          .step-optional {
-            font-size: 0.75rem;
-            font-style: italic;
-            color: #9fb3c8;
-          }
-
-          .step-bar-left,
-          .step-bar-right {
-            position: absolute;
-            top: calc(2rem + 5px);
-            /* height: 5px; */
-            background-color: #d9e2ec;
-            border: solid #d9e2ec;
-            border-width: 1px 0;
-          }
-          .step-bar-left {
-            width: calc(100% - 4rem);
-            left: 50%;
-            margin: 0 1.9rem;
-            z-index: -1;
-          }
-          .step-bar-right {
-            width: 0;
-            left: 50%;
-            margin: 0 1.9rem;
-            z-index: -1;
-            transition: width 500ms ease-in-out;
-          }
-          &.done .step-bar-right {
-            background-color: black;
-            border-color: black;
-            z-index: 3;
-            width: calc(100% - 4rem);
-          }
+        gap: 20px;
+      }
+      @media (max-width: 991px) {
+        .divii-5 {
+          max-width: 100%;
+          flex-wrap: wrap;
+        }
+      }
+      .divii-6 {
+        display: flex;
+        gap: 5px;
+      }
+      .divii-7 {
+        color: #000;
+        leading-trim: both;
+        text-edge: cap;
+        white-space: nowrap;
+        font: 600 24px/30px Urbanist, -apple-system, Roboto, Helvetica,
+          sans-serif;
+      }
+      @media (max-width: 991px) {
+        .divii-7 {
+          white-space: initial;
+        }
+      }
+      .divii-8 {
+        color: var(--text-greyscale-700, #616161);
+        leading-trim: both;
+        text-edge: cap;
+        align-self: start;
+        margin-top: 7px;
+        white-space: nowrap;
+        font: 600 14px/20px Urbanist, -apple-system, Roboto, Helvetica,
+          sans-serif;
+      }
+      @media (max-width: 991px) {
+        .divii-8 {
+          white-space: initial;
+        }
+      }
+      .divii-9 {
+        justify-content: center;
+        align-self: stretch;
+        display: flex;
+        gap: 5px;
+      }
+      .divii-10 {
+        color: var(--text-greyscale-700, #616161);
+        align-self: center;
+        white-space: nowrap;
+        margin: auto 0;
+        font: 600 14px Urbanist, -apple-system, Roboto, Helvetica, sans-serif;
+      }
+      @media (max-width: 991px) {
+        .divii-10 {
+          white-space: initial;
+        }
+      }
+      .divii-11 {
+        color: #000;
+        font: 600 24px Urbanist, -apple-system, Roboto, Helvetica, sans-serif;
+      }
+      .goal-detial-img-2 {
+        aspect-ratio: 1;
+        object-fit: contain;
+        object-position: center;
+        width: 20px;
+        overflow: hidden;
+        align-self: center;
+        max-width: 100%;
+        margin: auto 0;
+      }
+      .divii-12 {
+        color: var(--text-general-text-light, #212121);
+        leading-trim: both;
+        text-edge: cap;
+        align-self: center;
+        margin-top: 37px;
+        white-space: nowrap;
+        font: 600 24px Urbanist, -apple-system, Roboto, Helvetica, sans-serif;
+      }
+      @media (max-width: 991px) {
+        .divii-12 {
+          white-space: initial;
+        }
+      }
+      .divii-13 {
+        color: #000;
+        white-space: nowrap;
+        justify-content: center;
+        border-radius: var(--Rectangle-Radius, 100px);
+        background-color: #c4c4c4;
+        align-self: center;
+        margin-top: 36px;
+        width: 350px;
+        max-width: 100%;
+        padding: 11px 30px;
+        font: 600 16px Poppins, -apple-system, Roboto, Helvetica, sans-serif;
+      }
+      @media (max-width: 991px) {
+        .divii-13 {
+          white-space: initial;
+          padding: 0 20px;
+        }
+      }
+      .divii-14 {
+        color: #fff;
+        white-space: nowrap;
+        justify-content: center;
+        align-items: center;
+        border-radius: var(--Rectangle-Radius, 100px);
+        background-color: var(--surface-general-black, #000);
+        align-self: center;
+        margin-top: 20px;
+        width: 350px;
+        max-width: 100%;
+        padding: 11px 60px;
+        font: 600 16px Poppins, -apple-system, Roboto, Helvetica, sans-serif;
+      }
+      @media (max-width: 991px) {
+        .divii-14 {
+          white-space: initial;
+          padding: 0 20px;
         }
       }
     </style>
   </head>
   <body>
-    <div class="stepper-horizontal" id="stepper1">
-      <div class="step editing">
-        <div class="step-circle"><span class="span">1</span></div>
-        <div class="step-title">Basic Info</div>
-        <div class="step-bar-left"></div>
-        <div class="step-bar-right"></div>
-      </div>
-      <div class="step">
-        <div class="step-circle"><span class="span">2</span></div>
-        <div class="step-title">Address</div>
-        <div class="step-bar-left"></div>
-        <div class="step-bar-right"></div>
+    <div class="goal-details-container">
+      <div class="goal-details-container-sub">
+        <img
+          loading="lazy"
+          srcset="
+            https://cdn.builder.io/api/v1/image/assets/TEMP/f22e6b993513ba97c00195f354d5981e73fa18350347ddf8c18432047532091e?apiKey=a05c6109e97c4bde98e757ca99d37c45&width=100   100w,
+            https://cdn.builder.io/api/v1/image/assets/TEMP/f22e6b993513ba97c00195f354d5981e73fa18350347ddf8c18432047532091e?apiKey=a05c6109e97c4bde98e757ca99d37c45&width=200   200w,
+            https://cdn.builder.io/api/v1/image/assets/TEMP/f22e6b993513ba97c00195f354d5981e73fa18350347ddf8c18432047532091e?apiKey=a05c6109e97c4bde98e757ca99d37c45&width=400   400w,
+            https://cdn.builder.io/api/v1/image/assets/TEMP/f22e6b993513ba97c00195f354d5981e73fa18350347ddf8c18432047532091e?apiKey=a05c6109e97c4bde98e757ca99d37c45&width=800   800w,
+            https://cdn.builder.io/api/v1/image/assets/TEMP/f22e6b993513ba97c00195f354d5981e73fa18350347ddf8c18432047532091e?apiKey=a05c6109e97c4bde98e757ca99d37c45&width=1200 1200w,
+            https://cdn.builder.io/api/v1/image/assets/TEMP/f22e6b993513ba97c00195f354d5981e73fa18350347ddf8c18432047532091e?apiKey=a05c6109e97c4bde98e757ca99d37c45&width=1600 1600w,
+            https://cdn.builder.io/api/v1/image/assets/TEMP/f22e6b993513ba97c00195f354d5981e73fa18350347ddf8c18432047532091e?apiKey=a05c6109e97c4bde98e757ca99d37c45&width=2000 2000w,
+            https://cdn.builder.io/api/v1/image/assets/TEMP/f22e6b993513ba97c00195f354d5981e73fa18350347ddf8c18432047532091e?apiKey=a05c6109e97c4bde98e757ca99d37c45&
+          "
+          class="goal-detial-img"
+        />
+        <div class="divii-3">
+          <div class="divii-4"></div>
+        </div>
+        <div class="divii-5">
+          <div class="divii-6">
+            <div class="divii-7">25%</div>
+            <div class="divii-8">Granted</div>
+          </div>
+          <div class="divii-9">
+            <div class="divii-10">Est.</div>
+            <div class="divii-11">CA $273.22</div>
+            <img
+              loading="lazy"
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/94203ab5c1b661a8ffc6efe0c835f37ccb3286c4d62fab45116c5b5a0dc10118?apiKey=a05c6109e97c4bde98e757ca99d37c45&"
+              class="goal-detial-img-2"
+            />
+          </div>
+        </div>
+        <div class="divii-12">Amount: CA$50.00</div>
+        <div class="divii-13">Add to Cart and Continue Shopping</div>
+        <div class="divii-14">Add to Cart and Checkout</div>
       </div>
     </div>
-
-    <button onclick="nextStep()">Next</button>
-
-    <script>
-      var currentStep = 1;
-      var numSteps = 2;
-
-      function nextStep() {
-        currentStep++;
-        if (currentStep > numSteps) {
-          currentStep = 1;
-        }
-        var stepper = document.getElementById("stepper1");
-        var steps = stepper.getElementsByClassName("step");
-
-        Array.from(steps).forEach((step, index) => {
-          let stepNum = index + 1;
-          if (stepNum === currentStep) {
-            addClass(step, "editing");
-          } else {
-            removeClass(step, "editing");
-          }
-          if (stepNum < currentStep) {
-            addClass(step, "done");
-          } else {
-            removeClass(step, "done");
-          }
-        });
-      }
-
-      function hasClass(elem, className) {
-        return new RegExp(" " + className + " ").test(
-          " " + elem.className + " "
-        );
-      }
-
-      function addClass(elem, className) {
-        if (!hasClass(elem, className)) {
-          elem.className += " " + className;
-        }
-      }
-
-      function removeClass(elem, className) {
-        var newClass = " " + elem.className.replace(/[\t\r\n]/g, " ") + " ";
-        if (hasClass(elem, className)) {
-          while (newClass.indexOf(" " + className + " ") >= 0) {
-            newClass = newClass.replace(" " + className + " ", " ");
-          }
-          elem.className = newClass.replace(/^\s+|\s+$/g, "");
-        }
-      }
-    </script>
   </body>
 </html>

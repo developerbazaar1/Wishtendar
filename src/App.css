@@ -1577,7 +1577,7 @@ button.tab-btn-signin {
   background: white;
   border-radius: var(--Rectangle-Radius, 100px);
   border: 2px solid #000;
-  padding: 10px 44px;
+  padding: 10px 23px;
   justify-content: center;
   align-items: center;
 }
@@ -1589,7 +1589,7 @@ button.tab-btn-signup {
   background: white;
   border-radius: var(--Rectangle-Radius, 100px);
   border: 2px solid #000;
-  padding: 10px 44px;
+  padding: 10px 25px;
   justify-content: center;
   align-items: center;
   border: 2px solid #000;
@@ -1691,7 +1691,7 @@ button.backbtn {
   justify-content: center;
   align-items: flex-start;
   border-radius: 25px;
-  background-color: #f7f7f7;
+  /* background-color: #f7f7f7; */
   align-self: stretch;
   display: flex;
   width: 20%;
@@ -2822,7 +2822,7 @@ a.call-button {
 .works-thumbnail:hover {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
-.abt-img{
+.abt-img {
   object-fit: cover;
   object-position: center;
   aspect-ratio: 2;
@@ -2843,7 +2843,7 @@ a.call-button {
   border-top: none !important;
   border-right: none !important;
   border-left: none !important;
-  border-bottom: 2px solid #9E9E9E !important;
+  border-bottom: 2px solid #9e9e9e !important;
   border-radius: none !important;
   overflow-anchor: none;
   transition: var(--bs-accordion-transition);
@@ -2869,11 +2869,15 @@ a.call-button {
 .cst-acc.accordion {
   --bs-accordion-color: var(--bs-body-color);
   --bs-accordion-bg: var(--bs-body-bg);
-  --bs-accordion-transition: color 0.15s ease-in-out,background-color 0.15s ease-in-out,border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out,border-radius 0.15s ease;
+  --bs-accordion-transition: color 0.15s ease-in-out,
+    background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
+    box-shadow 0.15s ease-in-out, border-radius 0.15s ease;
   --bs-accordion-border-color: var(--bs-border-color);
   --bs-accordion-border-width: var(--bs-border-width);
-  --bs-accordion-border-radius: 0 !important);
-  --bs-accordion-inner-border-radius: calc(var(--bs-border-radius) - (var(--bs-border-width)));
+  --bs-accordion-border-radius: 0 !important;
+  --bs-accordion-inner-border-radius: calc(
+    var(--bs-border-radius) - (var(--bs-border-width))
+  );
   --bs-accordion-btn-padding-x: 1.25rem;
   --bs-accordion-btn-padding-y: 1rem;
   --bs-accordion-btn-color: var(--bs-body-color);
@@ -2904,10 +2908,10 @@ img.number-icon {
   gap: 12px;
   align-items: center;
 }
-.align-self-cntr{
+.align-self-cntr {
   align-self: center;
 }
-.text-justify{
+.text-justify {
   text-align: justify;
 }
 /* acordian body */
@@ -3163,6 +3167,7 @@ img.number-icon {
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
   min-width: 14.375rem !important;
   min-height: 23.688rem;
+  text-decoration: none !important;
 }
 
 .card-drag-icon {
@@ -3289,9 +3294,9 @@ img.number-icon {
 }
 
 .all-btn:hover {
-    background-color: #212121;
-    border-color: #212121;
-    color: #fff;
+  background-color: #212121;
+  border-color: #212121;
+  color: #fff;
 }
 
 .socal-links {
@@ -3622,69 +3627,69 @@ img.number-icon {
   gap: 12px;
 }
 
-.displaynameRanking{
-border: 1px solid #cbc9c9;
-    border-radius: 13px;
-    padding: 10px 15px 10px 14px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: relative;
+.displaynameRanking {
+  border: 1px solid #cbc9c9;
+  border-radius: 13px;
+  padding: 10px 15px 10px 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
 }
 
-.displaynameRanking .right{
+.displaynameRanking .right {
   display: flex;
 }
 
-.surprise-gift-container{
+.surprise-gift-container {
   width: 100%;
   border: 1px solid #cbc9c9;
-    border-radius: 13px;
-    padding: 10px 15px 10px 14px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: relative;
-    background-color: #FFF;
-    cursor: pointer;
-}
-
-.surprise-gift-container > label{
+  border-radius: 13px;
+  padding: 10px 15px 10px 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  background-color: #fff;
   cursor: pointer;
 }
 
-.giftmodal-body{
-    margin: 28px 54px;
-    /* border: 2px solid red; */
-    text-align: start;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-.giftmodal-body  .ceckbox-grup{
-    display: flex;
-    gap: 15px;
-    align-items: center;
+.surprise-gift-container > label {
+  cursor: pointer;
 }
 
-.giftmodal-body  .ceckbox-grup > input{
+.giftmodal-body {
+  margin: 28px 54px;
+  /* border: 2px solid red; */
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.giftmodal-body .ceckbox-grup {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.giftmodal-body .ceckbox-grup > input {
   width: 20px;
   height: 20px;
   accent-color: black;
 }
 
-.giftmodal-body .MinAmount-grup{
-    display: flex;
-    flex-direction: column;
-    gap: 7px;
+.giftmodal-body .MinAmount-grup {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
 }
 
-.giftmodal-body .MinAmount-grup > input{
-border: 1px solid grey;
-    border-radius: 10px;
-    padding: 10px 7px 10px 16px;
-    background-color: #EEE;
-    outline: none;
+.giftmodal-body .MinAmount-grup > input {
+  border: 1px solid grey;
+  border-radius: 10px;
+  padding: 10px 7px 10px 16px;
+  background-color: #eee;
+  outline: none;
 }
 
 .delete-account {
@@ -3692,33 +3697,31 @@ border: 1px solid grey;
   color: black;
 }
 
-.deletPassrdmodal-body{
-    margin: 28px 54px;
-    /* border: 2px solid red; */
-    text-align: start;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+.deletPassrdmodal-body {
+  margin: 28px 54px;
+  /* border: 2px solid red; */
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
-
 
 .deletPassrdmodal-body .password-grup {
-   display: flex;
-    flex-direction: column;
-    gap: 7px;
-
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
 }
-.deletPassrdmodal-body .password-grup > div{
-    display: flex;
-    align-items: center;
-    border: 1px solid grey;
-    border-radius: 10px;
-    padding: 10px 10px 10px 16px;
-    background-color: #EEE;
-    /* outline: none; */
+.deletPassrdmodal-body .password-grup > div {
+  display: flex;
+  align-items: center;
+  border: 1px solid grey;
+  border-radius: 10px;
+  padding: 10px 10px 10px 16px;
+  background-color: #eee;
+  /* outline: none; */
 }
 
-.deletPassrdmodal-body .password-grup > div > input{
+.deletPassrdmodal-body .password-grup > div > input {
   background-color: inherit;
   outline: none;
   border: none;
@@ -3726,71 +3729,69 @@ border: 1px solid grey;
   margin-left: 5px;
 }
 
-.deletPassrdmodal-body .passwordmessage-grup{
-     display: flex;
-    flex-direction: column;
-    gap: 7px;
+.deletPassrdmodal-body .passwordmessage-grup {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
 }
 
-.deletPassrdmodal-body .passwordmessage-grup > textarea{
+.deletPassrdmodal-body .passwordmessage-grup > textarea {
   border: 1px solid grey;
-    border-radius: 10px;
-    padding: 10px 7px 10px 16px;
-    background-color: #EEE;
-    outline: none;
-
+  border-radius: 10px;
+  padding: 10px 7px 10px 16px;
+  background-color: #eee;
+  outline: none;
 }
 
-.password-eye{
+.password-eye {
   cursor: pointer;
 }
 
-.deletPassrdmodal-success{
-
-     text-wrap: pretty;
+.deletPassrdmodal-success {
+  text-wrap: pretty;
   margin: 30px 47px 30px 48px;
 }
-.x-auto-setupBtn{
+.x-auto-setupBtn {
   cursor: pointer;
 }
-.typeo-32-38{
+.typeo-32-38 {
   font-family: Urbanist;
-font-size: 32px;
-font-style: normal;
-font-weight: 600;
-line-height: 38px
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 38px;
 }
-.typeo-18-24-u{
-color: #000;
-font-family: Urbanist;
-font-size: 18px;
-font-style: normal;
-font-weight: 400;
-line-height: 24px; /* 133.333% */
-}
-
-.step-body{
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+.typeo-18-24-u {
+  color: #000;
+  font-family: Urbanist;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 133.333% */
 }
 
-.step-one-sub-body{
-    border: 1px solid gray;
-    margin: 0 61px;
-    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
-    border-radius: 20px;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    -ms-border-radius: 20px;
-    -o-border-radius: 20px;
+.step-body {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
-.step-one-sub-body > img{
-    vertical-align: middle;
-    width: 100%;
-    border: 1px solid;
-    border-color: inherit;
-    border-radius: inherit;
+
+.step-one-sub-body {
+  border: 1px solid gray;
+  margin: 0 61px;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+.step-one-sub-body > img {
+  vertical-align: middle;
+  width: 100%;
+  border: 1px solid;
+  border-color: inherit;
+  border-radius: inherit;
 }
 .favorite-fighters-container {
   display: flex;
@@ -3799,13 +3800,14 @@ line-height: 24px; /* 133.333% */
 }
 
 .favorite-fighter {
-  flex: 0 0 200px; /* Adjust the initial size of each fighter box */
+  flex: 0 0 187px; /* Adjust the initial size of each fighter box */
   margin: 10px;
   text-align: center;
   border-radius: 20px;
   border: 1px solid rgba(217, 217, 217, 0.85);
   background: #fff;
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.10);
+  text-decoration: none;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   -ms-border-radius: 20px;
@@ -3834,4 +3836,63 @@ line-height: 24px; /* 133.333% */
   font-style: normal;
   font-weight: 600;
   line-height: 30px;
+}
+
+.filter-goal .surprise-goal {
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+}
+.surprise-goal > button {
+  width: fit-content;
+}
+
+.MinAmount-grup > .send-gift-container {
+  display: flex;
+  align-items: center;
+  background-color: #eee;
+  border-radius: 13px;
+  gap: 8px;
+  padding: 12px 16px;
+  color: #9e9e9e;
+}
+.MinAmount-grup > .send-gift-container > input,
+textarea {
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: inherit;
+}
+
+.type-12-18-4 {
+  font-family: Poppins;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.125rem;
+  color: #616161;
+}
+
+.add-surprise-to-card-btn {
+  background-color: #c4c4c4;
+  border-color: #c4c4c4;
+  border-style: solid;
+  padding: 4px 8px;
+  border-radius: 3.125rem;
+  font-weight: 600;
+  padding: 8px 0px;
+  width: 70%;
+  -webkit-border-radius: 3.125rem;
+  -moz-border-radius: 3.125rem;
+  -ms-border-radius: 3.125rem;
+  -o-border-radius: 3.125rem;
+  color: black;
+}
+
+.add-surprise-to-card-btn:hover {
+  background-color: #b3b3b3;
+}
+
+.back-to-page-btn {
+  cursor: pointer;
 }
