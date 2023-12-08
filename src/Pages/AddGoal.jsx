@@ -1,7 +1,7 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import CustomSelect from "../components/CustomSelect";
-import GoalComponent from "../components/GoalComponent";
+import GoalType from "../components/GoalType";
 
 const AddGoal = () => {
   const options = [
@@ -115,7 +115,7 @@ const AddGoal = () => {
               </div>
 
               {/* this is goal compoents */}
-              <GoalComponent />
+              <GoalType />
 
               {/* input 05 for goal category */}
               <div className="form-group text-left my-2">

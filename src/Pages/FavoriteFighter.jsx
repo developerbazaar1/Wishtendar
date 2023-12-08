@@ -10,18 +10,22 @@ const FavoriteFighter = () => {
     {
       img: FavoriteFither,
       name: "Andrew Ainsley",
+      id: "evadg",
     },
     {
       img: FavoriteFither2,
       name: "Tracy Cortez",
+      id: "fdfdf",
     },
     {
       img: FavoriteFither3,
       name: "Shonie Carter",
+      id: "edec",
     },
     {
       img: FavoriteFither4,
       name: "Ronda Rousey",
+      id: "jreic",
     },
   ];
 
@@ -65,12 +69,12 @@ const FavoriteFighter = () => {
         <section>
           <div className="favorite-fighters-container">
             {fighters?.map((fighter) => (
-              <div className="favorite-fighter">
+              <Link className="favorite-fighter" to="/adrew" key={fighter?.id}>
                 <div className="fighter-img-container">
                   <img src={fighter?.img} alt="favorite" />
                 </div>
                 <div className="fav-fighter-name">{fighter?.name}</div>
-              </div>
+              </Link>
             ))}
           </div>
         </section>

@@ -35,7 +35,7 @@ const CartFighter = () => {
         <div className="row ">
           <div className="col-md-12 col-sm-12 col-xs-12 col-lg-12 text-center">
             <div className="page-head">
-              <div class="card-head mb-3 mt-2">
+              <div className="card-head mb-3 mt-2">
                 <h5>Cart</h5>
               </div>
             </div>
@@ -336,8 +336,15 @@ const CartFighter = () => {
       <div className="row justify-content-center mt-2 mb-4 message-tab">
         <div className="col-md-11 col-lg-11 col-sm-12 col-xs-12">
           <div className="form-group">
-            <label className="form-head" htmlFor="message-area">Message</label>
-            <textarea className="form-control" placeholder="Write your message here" id="exampleTextarea" rows="6"></textarea>
+            <label className="form-head" htmlFor="message-area">
+              Message
+            </label>
+            <textarea
+              className="form-control"
+              placeholder="Write your message here"
+              id="exampleTextarea"
+              rows="6"
+            ></textarea>
           </div>
         </div>
       </div>
@@ -365,7 +372,7 @@ const CartFighter = () => {
                   ))}
                 </Form>
               </div>
-              <div class="read-terms">
+              <div className="read-terms">
                 <ul className="terms-list">
                   <li>I am making a non-refundable cash gift donation.</li>
                   <li>

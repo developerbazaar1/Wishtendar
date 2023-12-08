@@ -34,7 +34,7 @@ const LandingLog = () => {
                 <div className="col-md-12 col-sm-12 col-xs-12 col-lg-12">
                   <form className="user-enter-form">
                     <div className="form-start">
-                      <div className="form-brand">
+                      <div className="form-brand ">
                         <img
                           className="l-form-brand w-124 w-94"
                           src={BrandImg}
@@ -76,7 +76,7 @@ const LandingLog = () => {
             {showSignUp && (
               <form className="user-signup-form">
                 <div className="form-start-signup">
-                  <div className="form-brand">
+                  <div className="form-brand text-start">
                     <span className="back-i-btn">
                       <button
                         className="backbtn"
@@ -215,7 +215,7 @@ const LandingLog = () => {
                                 fill="none"
                               >
                                 <path
-                                  fill-rule="evenodd"
+                                  fillRule="evenodd"
                                   clipRule="evenodd"
                                   d="M13.1162 0.5C14.2337 0.5 15.3087 0.941667 16.0995 1.73417C16.8912 2.525 17.3337 3.59167 17.3337 4.70833V11.2917C17.3337 13.6167 15.442 15.5 13.1162 15.5H4.88366C2.55783 15.5 0.666992 13.6167 0.666992 11.2917V4.70833C0.666992 2.38333 2.54949 0.5 4.88366 0.5H13.1162ZM14.442 5.95L14.5087 5.88333C14.7078 5.64167 14.7078 5.29167 14.4995 5.05C14.3837 4.92583 14.2245 4.85 14.0587 4.83333C13.8837 4.82417 13.717 4.88333 13.5912 5L9.83366 8C9.35033 8.40083 8.65783 8.40083 8.16699 8L4.41699 5C4.15783 4.80833 3.79949 4.83333 3.58366 5.05833C3.35866 5.28333 3.33366 5.64167 3.52449 5.89167L3.63366 6L7.42533 8.95833C7.89199 9.325 8.45783 9.525 9.05033 9.525C9.64116 9.525 10.217 9.325 10.6828 8.95833L14.442 5.95Z"
                                   fill="#9E9E9E"
@@ -267,7 +267,7 @@ const LandingLog = () => {
                               />
                               <label
                                 className="form-check-label check-label mx-1-75"
-                                for="flexCheckDefault"
+                                htmlFor="flexCheckDefault"
                               >
                                 {" "}
                                 Remember Me{" "}

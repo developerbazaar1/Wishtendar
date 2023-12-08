@@ -187,3 +187,193 @@
 }
 
 /* stepper style  end here */
+
+/* css for goal details */
+
+.goal-details-container {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 0 60px;
+}
+@media (max-width: 991px) {
+  .goal-details-container {
+    padding: 0 20px;
+  }
+}
+.goal-details-container-sub {
+  text-align: center;
+  display: flex;
+  width: 505px;
+  max-width: 100%;
+  flex-direction: column;
+}
+.goal-detial-img {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  width: 280px;
+  overflow: hidden;
+  align-self: center;
+  max-width: 100%;
+}
+.divii-3 {
+  border-radius: var(--Rectangle-Radius, 100px);
+  background-color: var(--surface-light-dark-light-7, #eee);
+  align-self: stretch;
+  display: flex;
+  margin-top: 20px;
+  padding-right: 60px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+@media (max-width: 991px) {
+  .divii-3 {
+    max-width: 100%;
+    padding-right: 20px;
+  }
+}
+.divii-4 {
+  border-radius: var(--Rectangle-Radius, 100px);
+  background-color: #212121;
+  display: flex;
+  width: 200px;
+  height: 14px;
+  flex-direction: column;
+}
+.divii-5 {
+  justify-content: space-between;
+  align-items: start;
+  align-self: stretch;
+  display: flex;
+  margin-top: 20px;
+  width: 100%;
+  gap: 20px;
+}
+@media (max-width: 991px) {
+  .divii-5 {
+    max-width: 100%;
+    flex-wrap: wrap;
+  }
+}
+.divii-6 {
+  display: flex;
+  gap: 5px;
+}
+.divii-7 {
+  color: #000;
+  leading-trim: both;
+  text-edge: cap;
+  white-space: nowrap;
+  font: 600 22px/30px Urbanist, -apple-system, Roboto, Helvetica, sans-serif;
+}
+@media (max-width: 991px) {
+  .divii-7 {
+    white-space: initial;
+  }
+}
+.divii-8 {
+  color: var(--text-greyscale-700, #616161);
+  leading-trim: both;
+  text-edge: cap;
+  align-self: start;
+  margin-top: 7px;
+  white-space: nowrap;
+  font: 600 14px/20px Urbanist, -apple-system, Roboto, Helvetica, sans-serif;
+}
+@media (max-width: 991px) {
+  .divii-8 {
+    white-space: initial;
+  }
+}
+.divii-9 {
+  justify-content: center;
+  align-self: stretch;
+  display: flex;
+  gap: 5px;
+}
+.divii-10 {
+  color: var(--text-greyscale-700, #616161);
+  align-self: center;
+  white-space: nowrap;
+  margin: auto 0;
+  font: 600 14px Urbanist, -apple-system, Roboto, Helvetica, sans-serif;
+}
+@media (max-width: 991px) {
+  .divii-10 {
+    white-space: initial;
+  }
+}
+.divii-11 {
+  color: #000;
+  font: 600 22px Urbanist, -apple-system, Roboto, Helvetica, sans-serif;
+}
+.goal-detial-img-2 {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  width: 20px;
+  overflow: hidden;
+  align-self: center;
+  max-width: 100%;
+  margin: auto 0;
+}
+.divii-12 {
+  color: var(--text-general-text-light, #212121);
+  leading-trim: both;
+  text-edge: cap;
+  align-self: center;
+  margin-top: 37px;
+  white-space: nowrap;
+  font: 600 22px Urbanist, -apple-system, Roboto, Helvetica, sans-serif;
+}
+@media (max-width: 991px) {
+  .divii-12 {
+    white-space: initial;
+  }
+}
+.divii-13 {
+  text-decoration: none;
+  cursor: pointer;
+  color: #000;
+  white-space: nowrap;
+  justify-content: center;
+  border-radius: var(--Rectangle-Radius, 100px);
+  background-color: #c4c4c4;
+  align-self: center;
+  margin-top: 36px;
+  width: 350px;
+  max-width: 100%;
+  padding: 11px 30px;
+  font: 600 16px Poppins, -apple-system, Roboto, Helvetica, sans-serif;
+}
+@media (max-width: 991px) {
+  .divii-13 {
+    white-space: initial;
+    padding: 0 20px;
+  }
+}
+.divii-14 {
+  text-decoration: none;
+  cursor: pointer;
+  color: #fff;
+  white-space: nowrap;
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--Rectangle-Radius, 100px);
+  background-color: var(--surface-general-black, #000);
+  align-self: center;
+  margin-top: 20px;
+  width: 350px;
+  max-width: 100%;
+  padding: 11px 60px;
+  font: 600 16px Poppins, -apple-system, Roboto, Helvetica, sans-serif;
+}
+@media (max-width: 991px) {
+  .divii-14 {
+    white-space: initial;
+    padding: 0 20px;
+  }
+}
