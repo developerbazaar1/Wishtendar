@@ -53,7 +53,7 @@ const CartFighter = () => {
                   Rolland Richard <span className="Goal">goal</span>
                 </h6>
                 <p className="user-recall">
-                  You are about to contribute to Rolland Goals
+                You are about to contribute to [Fighter Name] Goals.
                 </p>
               </div>
             </div>
@@ -66,7 +66,7 @@ const CartFighter = () => {
               <Table responsive className="cart-product-table">
                 <thead className="cart-product-head">
                   <tr>
-                    <th className="text-left">Goal</th>
+                    <th className="text-left">Goals</th>
                     <th>Type/Qty</th>
                     <th>Amount</th>
                     <th></th>
@@ -126,8 +126,8 @@ const CartFighter = () => {
                     </td>
                     <td className="own-category t-data">
                       {" "}
-                      Subscription{" "}
-                      <span>
+                      Subscription:{" "}
+                      <span className="mx-2">
                         <Badge pill bg="light" text="dark">
                           Daily
                         </Badge>
@@ -171,8 +171,8 @@ const CartFighter = () => {
                       </div>
                     </td>
                     <td className="own-category t-data">
-                      Subscription
-                      <span>
+                      Subscription:
+                      <span className="mx-2">
                         <Badge pill bg="light" text="dark">
                           Daily
                         </Badge>
@@ -218,7 +218,7 @@ const CartFighter = () => {
                   Rolly Rich <span className="Goal">goal</span>
                 </h6>
                 <p className="user-recall">
-                  You are about to contribute to Rolland Goals
+                You are about to contribute to [Fighter Name] Goals.
                 </p>
               </div>
             </div>
@@ -291,8 +291,8 @@ const CartFighter = () => {
                     </td>
                     <td className="own-category t-data">
                       {" "}
-                      Subscription{" "}
-                      <span>
+                      Subscription:{" "}
+                      <span className="mx-2">
                         <Badge pill bg="light" text="dark">
                           Daily
                         </Badge>

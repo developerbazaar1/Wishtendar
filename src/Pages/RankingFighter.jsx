@@ -34,7 +34,7 @@ const RankingFighter = () => {
           <div className="col-md-12 col-sm-12 col-xs-12 col-lg-12 text-center">
             <div className="page-head">
               <div class="card-head mb-3 mt-2">
-                <h5>Ranking </h5>
+                <h5>Rankings </h5>
               </div>
             </div>
           </div>
