@@ -3018,6 +3018,7 @@ img.number-icon {
 .filterLeft {
   display: flex;
   gap: 0.5rem;
+  align-items: center;
 }
 
 .sub-btn-fonts {
@@ -3895,4 +3896,24 @@ textarea {
 
 .back-to-page-btn {
   cursor: pointer;
+}
+/* new change */
+span.cal-info {
+  opacity: 0.6;
+  color: black;
+}
+.mt-1px{
+  margin-top: 2px;
+}
+.my-link:active {
+  color: black; 
+}
+.my-link:focus {
+  outline: none; 
+  color: black; 
+}
+
+/* Styles for the SVG icon */
+.div-5 svg {
+
 }
