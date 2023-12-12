@@ -25,7 +25,7 @@ const About = () => {
               <div className="row mt-2">
                 {/* col for image */}
                 <div className="col-md-6 col-lg-6 col-sm-12 col-xs-12">
-                  <img src={ImgOne} alt="image" className="abt-img"/>
+                  <img src={ImgOne} alt="loading" className="abt-img"/>
                 </div>
                 {/* col for content */}
                 <div className="col-md-6 col-lg-6 col-sm-12 col-xs-12">
@@ -46,7 +46,7 @@ const About = () => {
                 </div>
                 {/* col for image */}
                 <div className="col-md-6 col-lg-6 col-sm-12 col-xs-12">
-                  <img src={ImgTwo} alt="image" className="abt-img"/>
+                  <img src={ImgTwo} alt="loading" className="abt-img"/>
                 </div>
               </div>
 

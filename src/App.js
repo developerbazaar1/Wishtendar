@@ -23,17 +23,18 @@ import PrivacyPolicy from "./Pages/PrivacyPolicy";
 import CookiePolicy from "./Pages/CookiePolicy";
 import Works from "./Pages/Works";
 import Faq from "./Pages/Faq";
-import Footer from "./components/Footer";
 import AddGoal from "./Pages/AddGoal";
 import FavoriteFighter from "./Pages/FavoriteFighter";
 import OtherFighterProfile from "./Pages/OtherFighterProfile";
 import GoalsDetails from "./Pages/GoalsDetails";
+import Test from "./Test";
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<LandingLog />} />
+        <Route path="/" index element={<LandingLog />} />
+        <Route path="/test" element={<Test />} />
         <Route element={<LayoutPage />}>
           <Route path=":oterfighter" element={<OtherFighterProfile />} />
           <Route path="addgoal" element={<AddGoal />} />

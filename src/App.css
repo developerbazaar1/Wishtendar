@@ -3038,8 +3038,11 @@ img.number-icon {
   border-radius: 20px;
   border: 1px solid rgba(217, 217, 217, 0.85);
   background: #d9d9d9;
-  width: 9rem;
-  height: 2.4rem;
+  width: 8.5rem;
+  height: 2.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .rightgoal {
@@ -3179,7 +3182,7 @@ img.number-icon {
   position: absolute;
   left: 0.6rem;
   top: 0.6rem;
-  cursor: pointer;
+  cursor: move;
   background-color: #e1e1e140;
   border-radius: 20px;
   display: flex;
@@ -3922,10 +3925,11 @@ span.cal-info {
 
 /* Styles for the SVG icon */
 .showHideIcon {
-  position: absolute;
-  top: 9px;
-  right: 25px;
+  /* position: absolute; */
+  /* top: 9px; */
+  /* right: 25px; */
   cursor: pointer;
+  border: none;
   border: none;
 }
 
@@ -3955,4 +3959,45 @@ span.cal-info {
 
 .x-postbtn {
   gap: 0.4rem;
+}
+
+.addItemRemoveItemContainer {
+  display: flex;
+  justify-content: space-around;
+}
+
+.add-btn,
+.remove-btn {
+  cursor: pointer;
+}
+
+.password-input {
+  height: 45px;
+  display: felx;
+  display: flex;
+  background-color: #eeeeee;
+  align-items: center;
+  padding: 0 15px;
+  border-radius: 15px;
+}
+
+.password-input > input {
+  border: none;
+  background-color: inherit;
+  margin-left: 7px;
+  outline: none;
+  margin-left: 7px;
+  width: full;
+  width: 100%;
+  display: flex;
+  height: 22px;
+  align-items: center;
+  /* padding: 12px 12px 12px 44px !important; */
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 600;
+  color: black;
+}
+.if-password[type="password"] {
+  font-size: 30px !important;
 }

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import LocaProgressBar from "./ProgressBar";
 import { Link } from "react-router-dom";
 import { AiOutlineLink } from "react-icons/ai";
@@ -9,27 +9,31 @@ import { Draggable, Droppable } from "react-beautiful-dnd";
 
 const Goals = ({ goals }) => {
   return (
-    <>
-      <Droppable droppableId="goal-card">
-        {(provided, snapshot) => (
-          <section
-            className="goal-card-section"
-            ref={provided.innerRef}
-            {...provided.droppableProps}
-          >
-            {goals?.map((goal, index) => (
-              <Draggable
-                draggableId={goal.id.toString()}
-                index={index}
-                key={goal.id}
-              >
-                {(provided) => (
+    <Droppable droppableId="goalCard" direction="horizontal">
+      {(provided, snapshot) => (
+        <section
+          ref={provided.innerRef}
+          {...provided.droppableProps}
+          className="goal-card-section"
+        >
+          {goals?.map((goal, index) => (
+            <Draggable
+              key={goal?.id}
+              draggableId={goal.id.toString()}
+              index={index}
+            >
+              {(provided) => (
+                <div
+                  className="card goal-card"
+                  {...provided.dragHandleProps}
+                  ref={provided.innerRef}
+                  {...provided.draggableProps}
+                >
                   <Link
                     to="/goaldetails"
-                    className="card goal-card"
-                    ref={provided.innerRef}
-                    {...provided.draggableProps}
-                    {...provided.dragHandleProps}
+                    style={{
+                      textDecoration: "none",
+                    }}
                   >
                     <div className="goal-car-img">
                       {/* card-drag-con start */}
@@ -70,13 +74,14 @@ const Goals = ({ goals }) => {
                       </div>
                     </div>
                   </Link>
-                )}
-              </Draggable>
-            ))}
-          </section>
-        )}
-      </Droppable>
-    </>
+                </div>
+              )}
+            </Draggable>
+          ))}
+          {provided.placeholder}
+        </section>
+      )}
+    </Droppable>
   );
 };
 

@@ -483,7 +483,7 @@ const ActivitiesFighter = () => {
                                 <img
                                   className="f-subs-thumbnail"
                                   src="https://cdn.builder.io/api/v1/image/assets/TEMP/d5adabbe-1b4b-4813-be62-fe95030c855b?apiKey=a05c6109e97c4bde98e757ca99d37c45&width=100%20100w,%20https://cdn.builder.io/api/v1/image/assets/TEMP/d5adabbe-1b4b-4813-be62-fe95030c855b?apiKey=a05c6109e97c4bde98e757ca99d37c45&width=200%20200w,%20https://cdn.builder.io/api/v1/image/assets/TEMP/d5adabbe-1b4b-4813-be62-fe95030c855b?apiKey=a05c6109e97c4bde98e757ca99d37c45&width=400%20400w,%20https://cdn.builder.io/api/v1/image/assets/TEMP/d5adabbe-1b4b-4813-be62-fe95030c855b?apiKey=a05c6109e97c4bde98e757ca99d37c45&width=800%20800w,%20https://cdn.builder.io/api/v1/image/assets/TEMP/d5adabbe-1b4b-4813-be62-fe95030c855b?apiKey=a05c6109e97c4bde98e757ca99d37c45&width=1200%201200w,%20https://cdn.builder.io/api/v1/image/assets/TEMP/d5adabbe-1b4b-4813-be62-fe95030c855b?apiKey=a05c6109e97c4bde98e757ca99d37c45&width=1600%201600w,%20https://cdn.builder.io/api/v1/image/assets/TEMP/d5adabbe-1b4b-4813-be62-fe95030c855b?apiKey=a05c6109e97c4bde98e757ca99d37c45&width=2000%202000w,%20https://cdn.builder.io/api/v1/image/assets/TEMP/d5adabbe-1b4b-4813-be62-fe95030c855b?apiKey=a05c6109e97c4bde98e757ca99d37c45&"
-                                  alt="image"
+                                  alt="prImage"
                                 ></img>
                               </div>
                               {/* description of card */}
@@ -613,7 +613,7 @@ const ActivitiesFighter = () => {
                                 <img
                                   className="f-subs-thumbnail"
                                   src="https://cdn.builder.io/api/v1/image/assets/TEMP/d5adabbe-1b4b-4813-be62-fe95030c855b?apiKey=a05c6109e97c4bde98e757ca99d37c45&width=100%20100w,%20https://cdn.builder.io/api/v1/image/assets/TEMP/d5adabbe-1b4b-4813-be62-fe95030c855b?apiKey=a05c6109e97c4bde98e757ca99d37c45&width=200%20200w,%20https://cdn.builder.io/api/v1/image/assets/TEMP/d5adabbe-1b4b-4813-be62-fe95030c855b?apiKey=a05c6109e97c4bde98e757ca99d37c45&width=400%20400w,%20https://cdn.builder.io/api/v1/image/assets/TEMP/d5adabbe-1b4b-4813-be62-fe95030c855b?apiKey=a05c6109e97c4bde98e757ca99d37c45&width=800%20800w,%20https://cdn.builder.io/api/v1/image/assets/TEMP/d5adabbe-1b4b-4813-be62-fe95030c855b?apiKey=a05c6109e97c4bde98e757ca99d37c45&width=1200%201200w,%20https://cdn.builder.io/api/v1/image/assets/TEMP/d5adabbe-1b4b-4813-be62-fe95030c855b?apiKey=a05c6109e97c4bde98e757ca99d37c45&width=1600%201600w,%20https://cdn.builder.io/api/v1/image/assets/TEMP/d5adabbe-1b4b-4813-be62-fe95030c855b?apiKey=a05c6109e97c4bde98e757ca99d37c45&width=2000%202000w,%20https://cdn.builder.io/api/v1/image/assets/TEMP/d5adabbe-1b4b-4813-be62-fe95030c855b?apiKey=a05c6109e97c4bde98e757ca99d37c45&"
-                                  alt="image"
+                                  alt="thumbnail"
                                 ></img>
                               </div>
                               {/* description of card */}

@@ -240,7 +240,7 @@ const LeftAside = () => {
               </div>
             </Link>
             {/* link 07 */}
-            <Link to="/home" className="my-link mb-2">
+            <Link to="/" className="my-link mb-2">
               <div className="div-5">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

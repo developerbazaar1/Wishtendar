@@ -1,6 +1,6 @@
-import React from 'react'
+import React from "react";
 import AlertaImage from "../img/work-page-image.png";
-import { Link } from 'react-router-dom/dist';
+// import { Link } from 'react-router-dom/dist';
 
 const HelpCenter = () => {
   return (
@@ -26,8 +26,11 @@ const HelpCenter = () => {
               </div>
               <div className="p-head mt-3">
                 <h2>Are you facing any problem?</h2>
-                <p>If you need instant support then use live chat option to reach us quickly. Our support will reply
-                  as soon as possible after you send us a message</p>
+                <p>
+                  If you need instant support then use live chat option to reach
+                  us quickly. Our support will reply as soon as possible after
+                  you send us a message
+                </p>
               </div>
               <div className="btn-group mt-3">
                 {/* Button for sending an email */}
@@ -44,7 +47,7 @@ const HelpCenter = () => {
         </div>
       </section>
     </div>
-  )
-}
+  );
+};
 
-export default HelpCenter
+export default HelpCenter;

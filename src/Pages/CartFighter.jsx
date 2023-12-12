@@ -1,11 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Table from "react-bootstrap/Table";
-import { Modal } from "bootstrap";
 import Badge from "react-bootstrap/Badge";
 import Form from "react-bootstrap/Form";
 
 const CartFighter = () => {
+  const [count, setCount] = useState(2);
+
+  const AddRemoveItme = (type) => {
+    if (count) {
+    }
+    if (type === "add") {
+      setCount((cur) => cur + 1);
+    } else {
+      if (count <= 1) {
+        return;
+      }
+      setCount((cur) => cur - 1);
+    }
+  };
+
   return (
     <main className="main-content">
       <section className="search-fighter-sec page-head">
@@ -290,13 +304,52 @@ const CartFighter = () => {
                       </div>
                     </td>
                     <td className="own-category t-data">
-                      {" "}
-                      Subscription:{" "}
-                      <span className="mx-2">
-                        <Badge pill bg="light" text="dark">
-                          Daily
-                        </Badge>
-                      </span>
+                      <div className="addItemRemoveItemContainer">
+                        {/* add item button */}
+                        <span
+                          className="add-btn"
+                          onClick={() => AddRemoveItme("add")}
+                          type="button"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="20"
+                            height="20"
+                            viewBox="0 0 20 20"
+                            fill="none"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M10.0003 18.3332C6.07199 18.3332 4.10783 18.3332 2.88699 17.1123C1.66699 15.8932 1.66699 13.9282 1.66699 9.99984C1.66699 6.0715 1.66699 4.10734 2.88699 2.8865C4.10866 1.6665 6.07199 1.6665 10.0003 1.6665C13.9287 1.6665 15.8928 1.6665 17.1128 2.8865C18.3337 4.10817 18.3337 6.0715 18.3337 9.99984C18.3337 13.9282 18.3337 15.8923 17.1128 17.1123C15.8937 18.3332 13.9287 18.3332 10.0003 18.3332ZM10.0003 6.87484C10.1661 6.87484 10.3251 6.94069 10.4423 7.0579C10.5595 7.17511 10.6253 7.33408 10.6253 7.49984V9.37484H12.5003C12.6661 9.37484 12.8251 9.44069 12.9423 9.5579C13.0595 9.67511 13.1253 9.83408 13.1253 9.99984C13.1253 10.1656 13.0595 10.3246 12.9423 10.4418C12.8251 10.559 12.6661 10.6248 12.5003 10.6248H10.6253V12.4998C10.6253 12.6656 10.5595 12.8246 10.4423 12.9418C10.3251 13.059 10.1661 13.1248 10.0003 13.1248C9.83457 13.1248 9.67559 13.059 9.55838 12.9418C9.44117 12.8246 9.37533 12.6656 9.37533 12.4998V10.6248H7.50033C7.33457 10.6248 7.17559 10.559 7.05838 10.4418C6.94117 10.3246 6.87533 10.1656 6.87533 9.99984C6.87533 9.83408 6.94117 9.67511 7.05838 9.5579C7.17559 9.44069 7.33457 9.37484 7.50033 9.37484H9.37533V7.49984C9.37533 7.33408 9.44117 7.17511 9.55838 7.0579C9.67559 6.94069 9.83457 6.87484 10.0003 6.87484Z"
+                              fill="#616161"
+                            />
+                          </svg>
+                        </span>
+                        <span>{count}</span>
+                        {/* remove items  */}
+
+                        <span
+                          className="remove-btn"
+                          onClick={() => AddRemoveItme("remove")}
+                          type="button"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="20"
+                            height="20"
+                            viewBox="0 0 20 20"
+                            fill="none"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M10.0003 18.3332C6.07199 18.3332 4.10783 18.3332 2.88699 17.1123C1.66699 15.8932 1.66699 13.9282 1.66699 9.99984C1.66699 6.0715 1.66699 4.10734 2.88699 2.8865C4.10866 1.6665 6.07199 1.6665 10.0003 1.6665C13.9287 1.6665 15.8928 1.6665 17.1128 2.8865C18.3337 4.10817 18.3337 6.0715 18.3337 9.99984C18.3337 13.9282 18.3337 15.8923 17.1128 17.1123C15.8937 18.3332 13.9287 18.3332 10.0003 18.3332ZM13.1253 9.99984C13.1253 10.1656 13.0595 10.3246 12.9423 10.4418C12.8251 10.559 12.6661 10.6248 12.5003 10.6248H7.50033C7.33457 10.6248 7.17559 10.559 7.05838 10.4418C6.94117 10.3246 6.87533 10.1656 6.87533 9.99984C6.87533 9.83408 6.94117 9.67511 7.05838 9.5579C7.17559 9.44069 7.33457 9.37484 7.50033 9.37484H12.5003C12.6661 9.37484 12.8251 9.44069 12.9423 9.5579C13.0595 9.67511 13.1253 9.83408 13.1253 9.99984Z"
+                              fill="#616161"
+                            />
+                          </svg>
+                        </span>
+                      </div>
                     </td>
                     <td className="product-prics t-data">
                       <small className="est">Est.</small> <span>CA$50.00</span>{" "}
