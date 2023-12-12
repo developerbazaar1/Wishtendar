@@ -50,10 +50,10 @@ const CartFighter = () => {
             <div className="cart-detail">
               <div className="fighter-name">
                 <h6 className="user-call">
-                  Rolland Richard <span className="Goal">goal</span>
+                  Rolland Richard <span className="Goal">goals</span>
                 </h6>
                 <p className="user-recall">
-                You are about to contribute to [Fighter Name] Goals.
+                  You are about to contribute to [Fighter Name] Goals.
                 </p>
               </div>
             </div>
@@ -215,10 +215,10 @@ const CartFighter = () => {
             <div className="cart-detail">
               <div className="fighter-name">
                 <h6 className="user-call">
-                  Rolly Rich <span className="Goal">goal</span>
+                  Rolly Rich <span className="Goal">goals</span>
                 </h6>
                 <p className="user-recall">
-                You are about to contribute to [Fighter Name] Goals.
+                  You are about to contribute to [Fighter Name] Goals.
                 </p>
               </div>
             </div>

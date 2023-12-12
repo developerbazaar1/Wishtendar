@@ -44,7 +44,7 @@ const LikeProfile = () => {
         </section>
         {/* profile like section start from here */}
         <section className="like-profiles">
-          <dev class="row justify-content-center">
+          <div class="row justify-content-center">
             <div className="col-md-11 col-lg-11 col-sm-12 col-xs-12">
               {/* likes profile content start from here */}
               <div className="like-profiles-content">
@@ -65,9 +65,11 @@ const LikeProfile = () => {
                           @mushtar565266 - [Fighter Promotion Company]
                         </div>
                       </div>
-                     <div className="follow-btn align-self-center">
-                     <Link to="#" className="follow-profile-btn">Follow</Link>
-                     </div>
+                      <div className="follow-btn align-self-center">
+                        <Link to="#" className="follow-profile-btn">
+                          Follow
+                        </Link>
+                      </div>
                     </div>
                   </Link>
                   {/* profile card 02 */}
@@ -85,9 +87,11 @@ const LikeProfile = () => {
                           @mushtar565266 - [Fighter Promotion Company]
                         </div>
                       </div>
-                     <div className="follow-btn align-self-center">
-                     <Link to="#" className="follow-profile-btn">Follow</Link>
-                     </div>
+                      <div className="follow-btn align-self-center">
+                        <Link to="#" className="follow-profile-btn">
+                          Follow
+                        </Link>
+                      </div>
                     </div>
                   </Link>
                   {/* profile card 03 */}
@@ -105,9 +109,11 @@ const LikeProfile = () => {
                           @mushtar565266 - [Fighter Promotion Company]
                         </div>
                       </div>
-                     <div className="follow-btn align-self-center">
-                     <Link to="#" className="follow-profile-btn">Follow</Link>
-                     </div>
+                      <div className="follow-btn align-self-center">
+                        <Link to="#" className="follow-profile-btn">
+                          Follow
+                        </Link>
+                      </div>
                     </div>
                   </Link>
                   {/* profile card 04 */}
@@ -125,9 +131,11 @@ const LikeProfile = () => {
                           @mushtar565266 - [Fighter Promotion Company]
                         </div>
                       </div>
-                     <div className="follow-btn align-self-center">
-                     <Link to="#" className="follow-profile-btn">Follow</Link>
-                     </div>
+                      <div className="follow-btn align-self-center">
+                        <Link to="#" className="follow-profile-btn">
+                          Follow
+                        </Link>
+                      </div>
                     </div>
                   </Link>
                   {/* profile card 05 */}
@@ -145,16 +153,17 @@ const LikeProfile = () => {
                           @mushtar565266 - [Fighter Promotion Company]
                         </div>
                       </div>
-                     <div className="follow-btn align-self-center">
-                     <Link to="#" className="follow-profile-btn">Follow</Link>
-                     </div>
+                      <div className="follow-btn align-self-center">
+                        <Link to="#" className="follow-profile-btn">
+                          Follow
+                        </Link>
+                      </div>
                     </div>
                   </Link>
-                  
                 </div>
               </div>
             </div>
-          </dev>
+          </div>
         </section>
       </main>
     </>

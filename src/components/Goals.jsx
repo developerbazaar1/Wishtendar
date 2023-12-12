@@ -62,7 +62,7 @@ const Goals = ({ goals }) => {
                           <Link className="text-dark">
                             <AiOutlineLink size={20} />
                           </Link>
-                          <Link className="d-flex gap-2 text-dark text-dec-non">
+                          <Link className="d-flex  text-dark text-dec-non x-postbtn">
                             <FaXTwitter size={22} />
                             Post
                           </Link>

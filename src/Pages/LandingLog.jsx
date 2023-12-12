@@ -1,11 +1,21 @@
 import React, { useState } from "react";
 import BrandImg from "../img/brand-logo.png";
 import { Link } from "react-router-dom";
-
+import { FaEye } from "react-icons/fa";
+import { FaEyeSlash } from "react-icons/fa";
+import Footer from "../components/Footer";
+import LoginFooterElement from "../elements/LoginFooterElement";
 const LandingLog = () => {
   const [showComment, setShowComment] = useState(true);
   const [showSignUp, setShowSignUp] = useState(false);
   const [showSignIn, setShowSignIn] = useState(false);
+
+  const [password, setPassword] = useState("");
+  const [showPassword, setShowPassword] = useState(false);
+
+  const togglePasswordVisibility = () => {
+    setShowPassword(!showPassword);
+  };
 
   const handleSignUpClick = () => {
     setShowComment(false);
@@ -196,14 +206,14 @@ const LandingLog = () => {
                               className="form-head mb-2"
                               htmlFor="log-mail"
                             >
-                              Email :
+                              Email
                             </label>
                             <div className="inputWithIcon">
                               <input
                                 type="text"
                                 id="login-email"
                                 className="form-control"
-                                placeholder="Enter your email id "
+                                placeholder="Enter your email"
                                 required
                               />
                               <svg
@@ -229,15 +239,16 @@ const LandingLog = () => {
                               className="form-head mb-2"
                               htmlFor="log-mail"
                             >
-                              password :
+                              Password
                             </label>
                             <div className="inputWithIcon">
                               <input
-                                type="password"
+                                type={showPassword ? "text" : "password"}
                                 id="login-password"
                                 className="form-control"
                                 placeholder="Enter your password "
                                 required
+                                onChange={(e) => setPassword(e.target.value)}
                               />
                               <svg
                                 className="i"
@@ -254,6 +265,20 @@ const LandingLog = () => {
                                   fill="#9E9E9E"
                                 />
                               </svg>
+
+                              {password.length > 0 && (
+                                <button
+                                  type="button"
+                                  className="showHideIcon"
+                                  onClick={togglePasswordVisibility}
+                                >
+                                  {showPassword ? (
+                                    <FaEye color="#9E9E9E" size={20} />
+                                  ) : (
+                                    <FaEyeSlash color="#9E9E9E" size={20} />
+                                  )}
+                                </button>
+                              )}
                             </div>
                           </div>
                           {/* div for remember log info */}
@@ -277,7 +302,7 @@ const LandingLog = () => {
 
                             <div className="form-check mt-2 mb-2">
                               <Link to="#" className="forget-password">
-                                Forget password?
+                                Forgot Password?
                               </Link>
                             </div>
                           </div>
@@ -316,6 +341,8 @@ const LandingLog = () => {
           </div>
         </div>
       </section>
+
+      <LoginFooterElement />
     </>
   );
 };

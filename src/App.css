@@ -1577,7 +1577,7 @@ button.tab-btn-signin {
   background: white;
   border-radius: var(--Rectangle-Radius, 100px);
   border: 2px solid #000;
-  padding: 10px 23px;
+  padding: 12px 34px;
   justify-content: center;
   align-items: center;
 }
@@ -1589,7 +1589,7 @@ button.tab-btn-signup {
   background: white;
   border-radius: var(--Rectangle-Radius, 100px);
   border: 2px solid #000;
-  padding: 10px 25px;
+  padding: 12px 34px;
   justify-content: center;
   align-items: center;
   border: 2px solid #000;
@@ -1653,11 +1653,15 @@ h2.sub-head {
   padding: 12px 12px 12px 44px !important;
   font-family: Poppins;
   font-size: 14px;
+  font-weight: 600;
+  color: black;
 }
 .inputWithIcon input[type="password"] {
   padding: 12px 12px 12px 44px !important;
   font-family: Poppins;
   font-size: 14px;
+  font-weight: 600;
+  color: black;
 }
 .i {
   position: absolute;
@@ -1677,6 +1681,7 @@ small.account-f {
 button.backbtn {
   border: none;
   background: none;
+  padding: 0;
 }
 /* sign up tab css */
 .main-container {
@@ -3033,9 +3038,8 @@ img.number-icon {
   border-radius: 20px;
   border: 1px solid rgba(217, 217, 217, 0.85);
   background: #d9d9d9;
-  padding: 0.625rem 0.938rem;
-  width: 10rem;
-  height: 2.563rem;
+  width: 9rem;
+  height: 2.4rem;
 }
 
 .rightgoal {
@@ -3173,9 +3177,12 @@ img.number-icon {
 
 .card-drag-icon {
   position: absolute;
-  left: 0.5rem;
-  top: 0.5rem;
+  left: 0.6rem;
+  top: 0.6rem;
   cursor: pointer;
+  background-color: #e1e1e140;
+  border-radius: 20px;
+  display: flex;
 }
 
 .goal-card-section {
@@ -3902,18 +3909,50 @@ span.cal-info {
   opacity: 0.6;
   color: black;
 }
-.mt-1px{
+.mt-1px {
   margin-top: 2px;
 }
 .my-link:active {
-  color: black; 
+  color: black;
 }
 .my-link:focus {
-  outline: none; 
-  color: black; 
+  outline: none;
+  color: black;
 }
 
 /* Styles for the SVG icon */
-.div-5 svg {
+.showHideIcon {
+  position: absolute;
+  top: 9px;
+  right: 25px;
+  cursor: pointer;
+  border: none;
+}
 
+.login-footer-page {
+  width: 62vw;
+  position: absolute;
+  bottom: 5px;
+  margin-left: 5vw;
+  color: #fff;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.login-footer-page > ul > li > a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer-container > ul > li > a {
+  color: #000;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.x-postbtn {
+  gap: 0.4rem;
 }
