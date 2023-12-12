@@ -10,9 +10,9 @@ export const DragButton = (
       <path
         d="M4.28572 7.14307H15.7143M4.28381 10.0002H15.7095M4.28572 12.8574H15.7095"
         stroke="black"
-        stroke-width="0.952381"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="0.952381"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   </>

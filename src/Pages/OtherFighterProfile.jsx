@@ -144,9 +144,38 @@ const OtherFighterProfile = () => {
                     Send Surprise
                   </button>
                   <div className="filterLeft ">
-                    <button className="category-btn sub-btn-fonts">
-                      Category
-                    </button>
+                    <div className="dropdown">
+                      <div
+                        type="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                        className="category-btn sub-btn-fonts"
+                      >
+                        Category
+                      </div>
+                      <ul className="dropdown-menu category-dropdown">
+                        <li>
+                          <a className="dropdown-item" href="#">
+                            All
+                          </a>
+                        </li>
+                        <li>
+                          <a className="dropdown-item" href="#">
+                            Gadgets and Electronics
+                          </a>
+                        </li>
+                        <li>
+                          <a className="dropdown-item" href="#">
+                            Health and Fitness Goals
+                          </a>
+                        </li>
+                        <li>
+                          <a className="dropdown-item" href="#">
+                            Other
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
                     <div className="dropdown">
                       <div
                         type="button"

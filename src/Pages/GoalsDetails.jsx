@@ -1,8 +1,8 @@
 import React from "react";
 import { Link, useNavigate } from "react-router-dom";
-import Gloves from "../img/product-gloves.png";
-import { ProgressBar } from "react-bootstrap";
-import LocaProgressBar from "../components/ProgressBar";
+// import Gloves from "../img/product-gloves.png";
+// import { ProgressBar } from "react-bootstrap";
+// import LocaProgressBar from "../components/ProgressBar";
 
 const GoalsDetails = () => {
   const navigate = useNavigate();

@@ -3,7 +3,6 @@ import BrandImg from "../img/brand-logo.png";
 import { Link } from "react-router-dom";
 import { FaEye } from "react-icons/fa";
 import { FaEyeSlash } from "react-icons/fa";
-import Footer from "../components/Footer";
 import LoginFooterElement from "../elements/LoginFooterElement";
 const LandingLog = () => {
   const [showComment, setShowComment] = useState(true);
@@ -241,20 +240,12 @@ const LandingLog = () => {
                             >
                               Password
                             </label>
-                            <div className="inputWithIcon">
-                              <input
-                                type={showPassword ? "text" : "password"}
-                                id="login-password"
-                                className="form-control"
-                                placeholder="Enter your password "
-                                required
-                                onChange={(e) => setPassword(e.target.value)}
-                              />
+                            <div className="password-input">
                               <svg
-                                className="i"
+                                className=""
                                 xmlns="http://www.w3.org/2000/svg"
-                                width="16"
-                                height="18"
+                                width="19"
+                                height="19"
                                 viewBox="0 0 16 18"
                                 fill="none"
                               >
@@ -265,7 +256,14 @@ const LandingLog = () => {
                                   fill="#9E9E9E"
                                 />
                               </svg>
-
+                              <input
+                                type={showPassword ? "text" : "password"}
+                                id="login-password"
+                                className={`${password ? "if-password" : ""}`}
+                                placeholder="Enter your password "
+                                required
+                                onChange={(e) => setPassword(e.target.value)}
+                              />
                               {password.length > 0 && (
                                 <button
                                   type="button"

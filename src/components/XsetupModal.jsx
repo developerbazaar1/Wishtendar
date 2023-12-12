@@ -14,10 +14,10 @@ const XsetupModal = ({ showTwiterModaldModal, setshowTwiterModaldModal }) => {
   };
 
   const steps = Array.from({ length: numSteps }, (_, index) => index + 1);
-  const [confrimmessage, setconfrimmessage] = useState(false);
+  // const [confrimmessage, setconfrimmessage] = useState(false);
   const handleClosePasswordModal = () => {
     setshowTwiterModaldModal(false);
-    setconfrimmessage(false);
+    // setconfrimmessage(false);
   };
 
   return (
