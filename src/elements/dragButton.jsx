@@ -2,15 +2,18 @@ export const DragButton = (
   <>
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="25"
-      height="25"
+      width="20"
+      height="20"
       viewBox="0 0 20 20"
-      fill="none"
+      fill="#D9D9D9"
     >
-      <circle cx="10" cy="10" r="10" fill="#D9D9D9" fillOpacity="0.25" />
-      <line x1="4" y1="6" x2="16" y2="6" stroke="black" strokeWidth="1.5" />
-      <line x1="4" y1="10" x2="16" y2="10" stroke="black" strokeWidth="1.5" />
-      <line x1="4" y1="14" x2="16" y2="14" stroke="black" strokeWidth="1.5" />
+      <path
+        d="M4.28572 7.14307H15.7143M4.28381 10.0002H15.7095M4.28572 12.8574H15.7095"
+        stroke="black"
+        stroke-width="0.952381"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
     </svg>
   </>
 );
